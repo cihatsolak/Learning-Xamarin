@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.LayoutTurleri.RelaviteLayoutProfil">
+    <ContentPage.Content>
+        <RelativeLayout>
+            <Image x:Name="BackgroundImage"
+                   Source="https://hkirsan.com/wp-content/uploads/2017/10/Udemy-Nedir.jpg"
+                   Opacity="0.8"
+                   Aspect="AspectFill"
+                   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+                   RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.3}"/>
+
+            <StackLayout 
+                Spacing="20"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=BackgroundImage, Property=Height, Factor=1,Constant=-70}"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=BackgroundImage, Property=Width, Factor=0.1,Constant=-20}"         >
+                <Image Source="https://janecanblogdotcom.files.wordpress.com/2014/09/ashley-square-profile.jpg" WidthRequest="100" HeightRequest="100"/>
+                <Label Text="Cihat SOLAK" FontSize="Medium" FontAttributes="Bold" VerticalOptions="End"/>
+            </StackLayout>
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

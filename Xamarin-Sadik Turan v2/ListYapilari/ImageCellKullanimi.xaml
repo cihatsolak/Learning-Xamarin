@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.ListYapilari.ImageCellKullanimi">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="header" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor" Value="Black"/>
+            </Style>
+            <Style x:Key="detail" TargetType="Label" BasedOn="{StaticResource header}">
+                <Setter Property="TextColor" Value="Gray"/>
+            </Style>
+            <Style x:Key="DetailButton" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="EndAndExpand"/>
+                <Setter Property="WidthRequest" Value="70"/>
+                <Setter Property="FontSize" Value="30"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding Movies}" RowHeight="80">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding ImageUrl}"/>
+                                <StackLayout>
+                                    <Label Text="{Binding Name}" Style="{StaticResource header}"/>
+                                    <Label Text="{Binding Director}" Style="{StaticResource detail}"/>
+                                </StackLayout>
+                                <Button Text=">" Style="{StaticResource DetailButton}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

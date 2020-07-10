@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.ListYapilari.ObservableData">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="AddButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Green"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="Text" Value="Yeni Film Ekle"/>
+                <Setter Property="HeightRequest" Value="150"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <ListView ItemsSource="{Binding Movies}" RowHeight="70">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Margin="5">
+                                    <Image Source="{Binding ImageUrl}" VerticalOptions="StartAndExpand"/>
+                                    <Label Text="{Binding Name}"/>
+                                    <Label Text="{Binding Director}"/>
+                                    <Button Text="Sil" BackgroundColor="Red" 
+                                            Command="{Binding DeleteCommand}" 
+                                            TextColor="White" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+
+            <StackLayout Padding="20">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Film Adı" />
+                    <Entry Text="{Binding Name}" Grid.Column="1"/>
+
+                    <Label Text="Yönetmen" Grid.Row="1"/>
+                    <Entry Text="{Binding Director}" Grid.Row="1" Grid.Column="1"/>
+
+                    <Label Text="Poster" Grid.Row="2" Grid.Column="0"/>
+                    <Entry Text="{Binding ImageUrl}" Grid.Row="2" Grid.Column="1"/>
+
+                    <Button Style="{StaticResource AddButton}" Command="{Binding AddCommand}" 
+                           CommandParameter="{Binding MovieModel}" Grid.Row="3" Grid.Column="1"/>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.LayoutTurleri.StackLayoutKullanimiEticaret" BackgroundColor="#faf4ff">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="20" Spacing="5">
+                <Label Text="Akıllı Saatler" TextColor="Orange" HorizontalOptions="Center" FontSize="30"/>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="20">
+                    <Image Source="https://bit.ly/2z4WK1W" WidthRequest="130" HeightRequest="100"/>
+
+                    <StackLayout>
+                        <Label Text="Apple Watch Seri 5" FontAttributes="Bold" FontSize="Medium"/>
+                        <Label Text="GPS'e sahip Apple Watch Series 5 alın. En yeni kasalar ve kayışlar arasından seçiminizi yapın." FontSize="15"/>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                            <Label Text="2099 TL" TextColor="Orange" FontSize="20" FontAttributes="Bold"/>
+                            <Label Text="Ürünü İncelne" TextColor="#00bcd4"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="20">
+                    <Image Source="https://bit.ly/2z4WK1W" WidthRequest="130" HeightRequest="100"/>
+
+                    <StackLayout>
+                        <Label Text="Apple Watch Seri 5" FontAttributes="Bold" FontSize="Medium"/>
+                        <Label Text="GPS'e sahip Apple Watch Series 5 alın. En yeni kasalar ve kayışlar arasından seçiminizi yapın." FontSize="15"/>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                            <Label Text="2099 TL" TextColor="Orange" FontSize="20" FontAttributes="Bold"/>
+                            <Label Text="Ürünü İncelne" TextColor="#00bcd4"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="20">
+                    <Image Source="https://bit.ly/2z4WK1W" WidthRequest="130" HeightRequest="100"/>
+
+                    <StackLayout>
+                        <Label Text="Apple Watch Seri 5" FontAttributes="Bold" FontSize="Medium"/>
+                        <Label Text="GPS'e sahip Apple Watch Series 5 alın. En yeni kasalar ve kayışlar arasından seçiminizi yapın." FontSize="15"/>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                            <Label Text="2099 TL" TextColor="Orange" FontSize="20" FontAttributes="Bold"/>
+                            <Label Text="Ürünü İncelne" TextColor="#00bcd4"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="20">
+                    <Image Source="https://bit.ly/2z4WK1W" WidthRequest="130" HeightRequest="100"/>
+
+                    <StackLayout>
+                        <Label Text="Apple Watch Seri 5" FontAttributes="Bold" FontSize="Medium"/>
+                        <Label Text="GPS'e sahip Apple Watch Series 5 alın. En yeni kasalar ve kayışlar arasından seçiminizi yapın." FontSize="15"/>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                            <Label Text="2099 TL" TextColor="Orange" FontSize="20" FontAttributes="Bold"/>
+                            <Label Text="Ürünü İncelne" TextColor="#00bcd4"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="20">
+                    <Image Source="https://bit.ly/2z4WK1W" WidthRequest="130" HeightRequest="100"/>
+
+                    <StackLayout>
+                        <Label Text="Apple Watch Seri 5" FontAttributes="Bold" FontSize="Medium"/>
+                        <Label Text="GPS'e sahip Apple Watch Series 5 alın. En yeni kasalar ve kayışlar arasından seçiminizi yapın." FontSize="15"/>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                            <Label Text="2099 TL" TextColor="Orange" FontSize="20" FontAttributes="Bold"/>
+                            <Label Text="Ürünü İncelne" TextColor="#00bcd4"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

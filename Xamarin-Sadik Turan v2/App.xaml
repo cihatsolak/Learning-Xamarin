@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.App">
+    
+    <Application.Resources>
+        
+        <!-- Movie Data Template (Collection View)-->
+        <DataTemplate x:Key="MovieDataTemplate">
+            <Grid Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.RowSpan="2" Source="{Binding ImageUrl}" HeightRequest="70" WidthRequest="70"/>
+                <Label Grid.Column="1" Text="{Binding Name}"/>
+                <Label Grid.Row="2" Grid.Column="1" Text="{Binding Director}"/>
+            </Grid>
+        </DataTemplate>
+        
+
+        <Color x:Key="PageBgColor">#e2e3e5</Color>
+        <x:String x:Key="SubjectPlaceHolder">Entry Subject</x:String>
+        <Color x:Key="BtnTextColor">White</Color>
+        <FontAttributes x:Key="BtnFontStyle">Bold</FontAttributes>
+        <Color x:Key="BtnSubmitColor">#007bff</Color>
+        <Color x:Key="BtnCancelColor">#dc3545</Color>
+
+        <!--AppXamldeStyleSetterTanimlamalari-->
+        <Style x:Key="Button" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#007bff"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+        </Style>
+        
+        <!--Üstteki (Button) a ait tanımlamaları al fakat üstte text rengi white burda red olsun-->
+        <Style x:Key="Button2" TargetType="Button" BasedOn="{StaticResource Button}">
+            <Setter Property="TextColor" Value="Red"/>
+        </Style>
+    </Application.Resources>
+    
+</Application>

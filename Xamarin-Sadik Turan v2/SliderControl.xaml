@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.SliderControl">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="Android">0,50,0,0</On>
+            <On Platform="iOS">0,140,0,0</On>
+        </OnPlatform>
+    </ContentPage.Padding>
+    
+    <ContentPage.Content>
+
+        <StackLayout BindingContext="{x:Reference Slider}" HorizontalOptions="Center" VerticalOptions="Center">
+            
+            <BoxView Color="Red" Opacity="{Binding Value}"/>
+            <Label Text="{Binding Value, StringFormat='Value is {0:F2}'}" 
+                   Opacity="{Binding Value}"/>
+            <Slider x:Name="Slider"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

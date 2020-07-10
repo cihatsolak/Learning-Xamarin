@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.ShellCourse.TabsShell"
+       
+            xmlns:views="clr-namespace:Course.MenuYapisi.HiyerarsikMenuSayfalari">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LabelFont" TargetType="Label">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </Shell.Resources>
+    
+    <TabBar>
+        <Tab Title="Filmler" Icon="https://bit.ly/36nVbIC">
+            <ShellContent Title="Filmler 1">
+                <ContentPage>
+                    <Label Text="Komedi Filmleri" Style="{StaticResource LabelFont}"/>
+                </ContentPage>
+            </ShellContent>
+            <ShellContent Title="Filmler 2" ContentTemplate="{DataTemplate views:FirstPage}">
+       
+            </ShellContent>
+        </Tab>
+        <Tab Title="Diziler" Icon="https://bit.ly/36nVbIC">
+            <ShellContent Title="Diziler 1">
+                <views:FirstPage/>
+            </ShellContent>
+        </Tab>
+    </TabBar>
+    
+</Shell>

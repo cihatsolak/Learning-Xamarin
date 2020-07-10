@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.MVVM.Views.MultipleSelectionPage">
+
+    <ContentPage.Content>
+        <StackLayout Margin="30">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <d:RowDefinition Height="Auto"/>
+                    <d:RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label x:Name="lblPrevious" Text="Previous: "/>
+                <Label Text="Current: : " Grid.Column="1"/>
+                <Label Text="Next: " Grid.Row="1"/>
+                <Label x:Name="lblCurrent" Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+
+            <CollectionView ItemsSource="{Binding Movies}" 
+                            SelectionMode="Multiple"
+                            SelectionChanged="CollectionView_SelectionChanged">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Grid.RowSpan="2" Source="{Binding ImageUrl}" HeightRequest="70" WidthRequest="70"/>
+                            <Label Grid.Column="1" Text="{Binding Name}"/>
+                            <Label Grid.Row="2" Grid.Column="1" Text="{Binding Director}"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

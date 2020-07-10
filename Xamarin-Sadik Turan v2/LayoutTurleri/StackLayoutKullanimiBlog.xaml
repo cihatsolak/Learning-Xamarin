@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.LayoutTurleri.StackLayoutKullanimiBlog" BackgroundColor="White">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Photo Gallery" FontAttributes="Bold" FontSize="Large" Margin="20"/>
+            <Image Source="https://bit.ly/3g0cy6D" Aspect="AspectFill" HeightRequest="300"/>
+
+            <StackLayout Orientation="Horizontal" Padding="20" Spacing="15">
+                <Label Text="Like" TextColor="#035aa6" FontSize="20"/>
+                <Label Text="Comment" TextColor="#035aa6" FontSize="20"/>
+                <Label Text="Share" TextColor="#035aa6" FontSize="20"/>
+            </StackLayout>
+
+            <BoxView BackgroundColor="Gray" HeightRequest="1" Margin="20"/>
+
+            <StackLayout Spacing="35" Padding="20">
+                <Label TextColor="Black" Text="150 likes" FontAttributes="Bold" FontSize="Large"/>
+                <Label TextColor="Black" FontSize="Medium" Text="Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin gelecek, buraya metin gelecek' yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak okunurluğu artırmasıdır. "/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

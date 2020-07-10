@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.Kontroller.LabelControl">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Hello " />
+                        <Span Text="Click Me!"
+                  TextColor="Blue"
+                  TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding GotoWebSite}"
+                                          CommandParameter="https://cihatsolak.com.tr" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                        <Span Text=" Some more text." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            
+            <Label x:Name="cihat" Text="Merhaba Cihat" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center" Margin="50"/>
+            <Button Text="İsmi Değiştir" Command="{Binding ChangeName}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.Kontroller.CheckBoxControl">
+    <ContentPage.Content>
+        <StackLayout Spacing="50">
+            
+            <!--Slider'a bağlı bir image örneği-->
+            <Image Source="https://bit.ly/2zOjUcM" HeightRequest="250" Rotation="{Binding Source={x:Reference SliderControl}, Path=Value}"/>
+
+            <!-- Checkbox -->
+            <StackLayout Orientation="Horizontal" BindingContext="{Binding Source={x:Reference checkHobbies}}">
+                <CheckBox x:Name="checkHobbies"/>
+                <Label Text="Film" VerticalOptions="Center"/>
+                <Label Text="{Binding IsChecked}"/>
+            </StackLayout>
+            
+            <!-- Switch -->
+            <StackLayout Orientation="Horizontal" BindingContext="{Binding Source={x:Reference Switcher}}">
+                <Switch x:Name="Switcher" IsToggled="True"/>
+                <Label Text="{Binding IsToggled}" TextColor="Red"/>
+            </StackLayout>
+            
+            <!-- Slider -->
+            <StackLayout Padding="40" BindingContext="{Binding Source={x:Reference SliderControl}}">
+                <Slider x:Name="SliderControl" Maximum="360" Minimum="1"/>
+                <Label Text="{Binding Value, StringFormat='{0:F0}'}" FontSize="50"/>
+            </StackLayout>
+            
+            <!--Stepper-->
+            <StackLayout>
+                <Stepper x:Name="StepperControl" ValueChanged="StepperControl_ValueChanged"/>
+                <Label x:Name="StepperLabel" Text="0"/>
+            </StackLayout>
+            
+            <!--Picker (Selectbox) Kontrolü -->
+            <StackLayout BindingContext="{Binding Source={x:Reference PickerControl}}">
+                <Picker x:Name="PickerControl" SelectedIndexChanged="PickerControl_SelectedIndexChanged">
+                </Picker>
+                <Label Text="{Binding SelectedItem, StringFormat='Seçilen Değer {0}'}"/>
+                <Label x:Name="lblBackEndResult" Text=""/>
+            </StackLayout>
+            
+            <!-- DatePicker -->
+            <StackLayout Spacing="10">
+                <Label Text="Başlangıç Tarihi"/>
+                <DatePicker x:Name="FirstDate"/>
+                
+                <Label Text="Bitiş Tarihi"/>
+                <DatePicker MinimumDate="{Binding Source={x:Reference FirstDate},Path=Date}"/>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

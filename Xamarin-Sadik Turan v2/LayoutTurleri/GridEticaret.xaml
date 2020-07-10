@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.LayoutTurleri.GridEticaret" BackgroundColor="#faf2f2">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="15">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Akıllı Saatler" FontSize="30" TextColor="Orange" 
+                       FontAttributes="Bold" HorizontalOptions="Center"
+                       Grid.ColumnSpan="3"/>
+
+                    <StackLayout BackgroundColor="White" Padding="10,15" Grid.Row="1" Grid.Column="0">
+                        <Image Source="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/APPLE/thumb/TeoriV2-104165-2_large.jpg" HeightRequest="130"/>
+                        <Label Text="Apple Watch Seri 4 Nike" FontAttributes="Bold" FontSize="Medium"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Label FontSize="Medium" Text="2099 TL" FontAttributes="Bold" TextColor="Orange"/>
+                            <Label FontSize="Small" Text="3499 TL" TextDecorations="Strikethrough" FontAttributes="Bold" TextColor="Gray"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="https://img.icons8.com/office/80/000000/filled-like.png"/>
+                            <Image Source="https://img.icons8.com/plasticine/100/000000/shopping-cart.png" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="White" Padding="10,15" Grid.Row="1" Grid.Column="1">
+                        <Image Source="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/APPLE/thumb/TeoriV2-104165-2_large.jpg" HeightRequest="130"/>
+                        <Label Text="Apple Watch Seri 4 Nike" FontAttributes="Bold" FontSize="Medium"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Label FontSize="Medium" Text="2099 TL" FontAttributes="Bold" TextColor="Orange"/>
+                            <Label FontSize="Small" Text="3499 TL" TextDecorations="Strikethrough" FontAttributes="Bold" TextColor="Gray"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="https://img.icons8.com/office/80/000000/filled-like.png"/>
+                            <Image Source="https://img.icons8.com/plasticine/100/000000/shopping-cart.png" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="White" Padding="10,15" Grid.Row="1" Grid.Column="2">
+                        <Image Source="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/APPLE/thumb/TeoriV2-104165-2_large.jpg" HeightRequest="130"/>
+                        <Label Text="Apple Watch Seri 4 Nike" FontAttributes="Bold" FontSize="Medium"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Label FontSize="Medium" Text="2099 TL" FontAttributes="Bold" TextColor="Orange"/>
+                            <Label FontSize="Small" Text="3499 TL" TextDecorations="Strikethrough" FontAttributes="Bold" TextColor="Gray"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="https://img.icons8.com/office/80/000000/filled-like.png"/>
+                            <Image Source="https://img.icons8.com/plasticine/100/000000/shopping-cart.png" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="White" Padding="10,15" Grid.Row="2" Grid.Column="0">
+                        <Image Source="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/APPLE/thumb/TeoriV2-104165-2_large.jpg" HeightRequest="130"/>
+                        <Label Text="Apple Watch Seri 4 Nike" FontAttributes="Bold" FontSize="Medium"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Label FontSize="Medium" Text="2099 TL" FontAttributes="Bold" TextColor="Orange"/>
+                            <Label FontSize="Small" Text="3499 TL" TextDecorations="Strikethrough" FontAttributes="Bold" TextColor="Gray"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="https://img.icons8.com/office/80/000000/filled-like.png"/>
+                            <Image Source="https://img.icons8.com/plasticine/100/000000/shopping-cart.png" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="White" Padding="10,15" Grid.Row="2" Grid.Column="1">
+                        <Image Source="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/APPLE/thumb/TeoriV2-104165-2_large.jpg" HeightRequest="130"/>
+                        <Label Text="Apple Watch Seri 4 Nike" FontAttributes="Bold" FontSize="Medium"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Label FontSize="Medium" Text="2099 TL" FontAttributes="Bold" TextColor="Orange"/>
+                            <Label FontSize="Small" Text="3499 TL" TextDecorations="Strikethrough" FontAttributes="Bold" TextColor="Gray"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="https://img.icons8.com/office/80/000000/filled-like.png"/>
+                            <Image Source="https://img.icons8.com/plasticine/100/000000/shopping-cart.png" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="White" Padding="10,15" Grid.Row="2" Grid.Column="2">
+                        <Image Source="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/APPLE/thumb/TeoriV2-104165-2_large.jpg" HeightRequest="130"/>
+                        <Label Text="Apple Watch Seri 4 Nike" FontAttributes="Bold" FontSize="Medium"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Label FontSize="Medium" Text="2099 TL" FontAttributes="Bold" TextColor="Orange"/>
+                            <Label FontSize="Small" Text="3499 TL" TextDecorations="Strikethrough" FontAttributes="Bold" TextColor="Gray"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="https://img.icons8.com/office/80/000000/filled-like.png"/>
+                            <Image Source="https://img.icons8.com/plasticine/100/000000/shopping-cart.png" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="White" Padding="10,15" Grid.Row="3" Grid.Column="0">
+                        <Image Source="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/APPLE/thumb/TeoriV2-104165-2_large.jpg" HeightRequest="130"/>
+                        <Label Text="Apple Watch Seri 4 Nike" FontAttributes="Bold" FontSize="Medium"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Label FontSize="Medium" Text="2099 TL" FontAttributes="Bold" TextColor="Orange"/>
+                            <Label FontSize="Small" Text="3499 TL" TextDecorations="Strikethrough" FontAttributes="Bold" TextColor="Gray"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="https://img.icons8.com/office/80/000000/filled-like.png"/>
+                            <Image Source="https://img.icons8.com/plasticine/100/000000/shopping-cart.png" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                </Grid>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

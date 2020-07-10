@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "Z+NLhGCLMc2YIZQhRn65N2N8PnQjvRFd9peCiVm/e17cBf8V7haitZ0QE9F9iX/JzX62eAyqO7eF/lhzh6INdw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\CihatSolak\\source\\repos\\XamarinCoursevs2\\Course\\Course\\Course.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\CihatSolak\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\CihatSolak\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\CihatSolak\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\CihatSolak\\.nuget\\packages\\xamarin.forms\\4.7.0.773-pre1\\xamarin.forms.4.7.0.773-pre1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.LayoutTurleri.AbsoluteLayoutHavaDurumu">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Image Source="https://thumbs.gfycat.com/DeadlyEmotionalArcherfish-size_restricted.gif"
+                   Aspect="AspectFill" 
+                   AbsoluteLayout.LayoutFlags="All" 
+                   AbsoluteLayout.LayoutBounds="0,0,1,1" />
+
+            <StackLayout Spacing="20" 
+                         AbsoluteLayout.LayoutBounds="0,0.25,1,0.5" 
+                         AbsoluteLayout.LayoutFlags="All">
+
+                <Image Source="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png"/>
+                <Label Text="İstanbul" HorizontalOptions="Center" FontSize="40" TextColor="White"/>
+                <Label Text="15°" HorizontalOptions="Center" FontSize="35" TextColor="White"/>
+
+            </StackLayout>
+
+            <StackLayout Padding="30,20" Spacing="100" Orientation="Horizontal" BackgroundColor="#30475e"
+                         AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" 
+                         AbsoluteLayout.LayoutBounds="0,1,1,75">
+                <Label Text="Sıcaklık" TextColor="White"/>
+                <Label Text="Rüzgar" TextColor="White"/>
+                <Label Text="Nem" TextColor="White"/>
+            </StackLayout>
+            
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

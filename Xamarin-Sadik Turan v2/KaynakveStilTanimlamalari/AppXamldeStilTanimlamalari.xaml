@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.KaynakveStilTanimlamalari.AppXamldeStilTanimlamalari">
+
+    <ContentPage.Resources>
+        <!-- App Xaml'da da aynı özellik var ama burada da tanımladığım için ezmiş oluyorum.-->
+        <Color x:Key="PageBgColor">#e2e3e5</Color>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <Grid Padding="20" BackgroundColor="{StaticResource PageBgColor}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Entry Placeholder="{StaticResource SubjectPlaceHolder}" Grid.Row="0"/>
+            <Editor Placeholder="{StaticResource SubjectPlaceHolder}" Grid.Row="1"/>
+            <StackLayout Grid.Row="2">
+                <Button Text="Submit" BackgroundColor="{StaticResource BtnSubmitColor}" TextColor="{StaticResource BtnTextColor}"/>
+                <Button Text="Cancel" BackgroundColor="{StaticResource BtnCancelColor}" TextColor="{StaticResource BtnTextColor}"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.DataBinding.INotifyPropertyChangedPage">
+
+    <ContentPage.Resources>
+        <Style x:Key="StackLayout" TargetType="StackLayout">
+            <Setter Property="Padding" Value="30"/>
+            <Setter Property="Spacing" Value="25"/>
+        </Style>
+        <Style x:Key="Title" TargetType="Label">
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource StackLayout}">
+            
+            <StackLayout>
+                <Label Text="Back-End" Style="{StaticResource Title}"/>
+                <Entry Text="{Binding FirstName}" Placeholder="Entry Firstname"/>
+                <Label Text="{Binding DisplayName}"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Back-End" Style="{StaticResource Title}"/>
+                <Entry Text="{Binding LastName}" Placeholder="Entry Lastname"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Back-End" Style="{StaticResource Title}"/>
+                <Entry Text="{Binding FullName}" Placeholder="Entry Lastname" IsReadOnly="True"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Xaml" Style="{StaticResource Title}"/>
+                <Picker ItemsSource="{Binding Cities}" SelectedItem="{Binding CityName}"></Picker>
+                <Label Text="{Binding DisplaySelectedCityName}"/>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

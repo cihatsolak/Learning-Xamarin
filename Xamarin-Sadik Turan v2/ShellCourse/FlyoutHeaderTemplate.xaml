@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.ShellCourse.FlyoutHeaderTemplate"
+             
+             
+             HeightRequest="175">
+
+    <Grid>
+        <Image Source="https://bit.ly/36wET0g" Aspect="Fill" Opacity="0.6"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+            <Image Source="https://bit.ly/36mxYGS" WidthRequest="65" HeightRequest="65"/>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <Label Text="Cihat SOLAK" TextColor="White" FontSize="Large"/>
+                <Label Text="Yazılım Uzmanı" TextColor="White" FontSize="Medium"/>
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

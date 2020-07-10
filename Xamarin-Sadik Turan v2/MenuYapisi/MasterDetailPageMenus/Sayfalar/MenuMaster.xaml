@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.MenuYapisi.MasterDetailPageMenus.Sayfalar.MenuMaster" Title="Menu Master">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="Header" TargetType="Image">
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="Aspect" Value="AspectFill"/>
+                <Setter Property="Source" Value="https://image.freepik.com/free-vector/abstract-design-blue-background_23-2148497489.jpg"/>
+                <Setter Property="AbsoluteLayout.LayoutFlags" Value="All"/>
+                <Setter Property="AbsoluteLayout.LayoutBounds" Value="1,1,1,1"/>
+            </Style>
+            <Style x:Key="ProfileImage" TargetType="Image">
+                <Setter Property="Source" Value="https://img.icons8.com/color/160/000000/user-male-circle.png"/>
+            </Style>
+            <Style x:Key="HeaderContent" TargetType="StackLayout">
+                <Setter Property="Orientation" Value="Horizontal"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Spacing" Value="20"/>
+                <Setter Property="AbsoluteLayout.LayoutFlags" Value="PositionProportional"/>
+                <Setter Property="AbsoluteLayout.LayoutBounds" Value="0.4,0.5,300,100"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <AbsoluteLayout>
+                <Image Style="{StaticResource Header}"/>
+                <StackLayout Style="{StaticResource HeaderContent}">
+                    <Image Style="{StaticResource ProfileImage}"/>
+                    <StackLayout Spacing="10">
+                        <Label Text="{Binding Name}" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
+                        <Label Text="{Binding Title}" TextColor="White" FontSize="Medium"/>
+                        <Label Text="{Binding Departmant}" TextColor="White"/>
+                    </StackLayout>
+                </StackLayout>               
+            </AbsoluteLayout>
+            
+            <ListView x:Name="listView" ItemSelected="Handle_MenuSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="5,10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="{Binding Icon}"/>
+                                <Label Grid.Column="1" Text="{Binding Title}"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

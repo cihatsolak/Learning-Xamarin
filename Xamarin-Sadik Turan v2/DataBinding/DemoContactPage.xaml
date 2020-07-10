@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:converters="clr-namespace:Course.DataBinding.ValueConverters"
+             x:Class="Course.DataBinding.DemoContactPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="Layout" TargetType="StackLayout">
+                <Setter Property="Padding" Value="20"/>
+                <Setter Property="Spacing" Value="20"/>
+            </Style>
+            
+            <Style x:Key="Header" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="Medium"/>
+            </Style>
+            
+            <Style x:Key="Button" TargetType="Button">
+                <Setter Property="Padding" Value="23"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+
+            <Style x:Key="LoaderLayout" TargetType="StackLayout">
+                <Setter Property="Opacity" Value="0.5"/>
+                <Setter Property="Orientation" Value="Horizontal"/>
+                <Setter Property="BackgroundColor" Value="LightGray"/>
+                <Setter Property="AbsoluteLayout.LayoutBounds" Value="0,0,1,1"/>
+                <Setter Property="AbsoluteLayout.LayoutFlags" Value="All"/>
+            </Style>
+
+            <Style x:Key="LoaderText" TargetType="Label">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+            </Style>
+            
+            <converters:IntToBoolConverter x:Key="IntToBool"/>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+
+        <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout Style="{StaticResource Layout}" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                <Label Text="Ad Soyad" Style="{StaticResource Header}"/>
+                <Entry Text="{Binding Name}" Placeholder="Adınızı Giriniz"/>
+
+                <Label Text="Telefon" Style="{StaticResource Header}"/>
+                <Entry Text="{Binding Phone}" Placeholder="Telefon Numaranız" Keyboard="Telephone"/>
+
+                <Label Text="Blog" Style="{StaticResource Header}"/>
+                <Entry x:Name="Blog" Text="{Binding WebSite}" Placeholder="Şahsi Web Siteniz" Keyboard="Url"/>
+
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Label Text="Favori"/>
+                    <Switch IsToggled="{Binding Favorite}"/>
+                </StackLayout>
+
+                <Label Text="{Binding DisplayMessage}"/>
+
+                <Button IsEnabled="{Binding Source={x:Reference Blog},Path=Text,Converter={StaticResource IntToBool}}"
+                    Text="Web Sitesine Git" 
+                    Style="{StaticResource Button}"
+                    Command="{Binding WebCommand}" 
+                    CommandParameter="{Binding WebSite}"/>
+
+                <Button Text="Kaydet" Style="{StaticResource Button}"
+                    Command="{Binding InternalWebCommand}"
+                    CommandParameter="{Binding WebSite}"/>
+
+            </StackLayout>
+
+            <!-- Loader Gif -->
+            <StackLayout IsVisible="{Binding IsBusy}" Style="{StaticResource LoaderLayout}">
+                <ActivityIndicator IsRunning="{Binding IsBusy}" Style="{StaticResource LoaderText}"/>
+            </StackLayout>
+
+        </AbsoluteLayout>
+     
+    </ContentPage.Content>
+
+</ContentPage>

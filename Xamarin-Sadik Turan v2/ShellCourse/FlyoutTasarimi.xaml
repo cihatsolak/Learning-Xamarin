@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.ShellCourse.FlyoutTasarimi"
+            
+             xmlns:local="clr-namespace:Course.ShellCourse">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="MenuItem" TargetType="Label">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <Shell.FlyoutHeader>
+        <local:FlyoutHeaderTemplate/>
+    </Shell.FlyoutHeader>
+    
+    <FlyoutItem Title="Filmler" Icon="https://img.icons8.com/cotton/128/000000/movie-beginning--v1.png">
+        <Tab Title="Yabancı">
+            <ShellContent Title="Macera">
+                <ContentPage>
+                    <Label Text="Yabancı Macera Filmleri" Style="{StaticResource MenuItem}"/>
+                </ContentPage>
+            </ShellContent>
+            <ShellContent Title="Korku">
+                <ContentPage>
+                    <Label Text="Yabancı Korku Filmleri" Style="{StaticResource MenuItem}"/>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Yerli">
+            <ShellContent Title="Macera">
+                <ContentPage>
+                    <Label Text="Yerli Macera Filmleri" Style="{StaticResource MenuItem}"/>
+                </ContentPage>
+            </ShellContent>
+            <ShellContent Title="Korku">
+                <ContentPage>
+                    <Label Text="Yerli Korku Filmleri" Style="{StaticResource MenuItem}"/>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Diziler" Icon="https://img.icons8.com/plasticine/200/000000/retro-tv.png">
+        <ShellContent>
+            <ContentPage>
+                <Label Text="1990 Filmleri" Style="{StaticResource MenuItem}"/>
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>    
+    
+    <!--Shell Contenti FlyoutItem tag'leri içerisine almasam da, bunu otomatik olarak kendini yapmakta.-->
+    <ShellContent Title="Kitaplar">
+        <ContentPage>
+            <Label Text="Kişisel Gelişim Kitapları" Style="{StaticResource MenuItem}"/>
+        </ContentPage>
+    </ShellContent>
+</Shell>

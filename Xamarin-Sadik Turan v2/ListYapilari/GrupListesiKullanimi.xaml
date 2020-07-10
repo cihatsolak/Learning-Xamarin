@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.ListYapilari.GrupListesiKullanimi">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="asdasd"/>
+            <ListView x:Name="listView" RowHeight="90" 
+                  GroupDisplayBinding="{Binding Title}" GroupShortNameBinding="{Binding ShortName}" IsGroupingEnabled="True"
+                      ItemTapped="TappedItem" ItemSelected="SelectedItem">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="40">
+                                <Image Source="{Binding Name}"/>
+                                <StackLayout>
+                                    <Label Text="{Binding Name}"/>
+                                    <Label Text="{Binding Director}" TextColor="Gray"/>
+                                </StackLayout>
+                                <Button FontSize="30" BackgroundColor="Red" Padding="50"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

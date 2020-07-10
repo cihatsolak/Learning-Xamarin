@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:template="clr-namespace:Course.CollectionViewKullanimi.Models"
+             x:Class="Course.CollectionViewKullanimi.SimpleCollectionView">
+
+    <ContentPage.Resources>
+        <DataTemplate x:Key="MovieDataTemplate">
+            <Grid Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.RowSpan="2" Source="{Binding ImageUrl}" HeightRequest="70" WidthRequest="70"/>
+                <Label Grid.Column="1" Text="{Binding Name}"/>
+                <Label Grid.Row="2" Grid.Column="1" Text="{Binding Director}"/>
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="PopularDataTemplate">
+            <Grid Padding="10" BackgroundColor="Yellow">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.RowSpan="2" Source="{Binding ImageUrl}" HeightRequest="70" WidthRequest="70"/>
+                <Label Grid.Column="1" Text="{Binding Name}"/>
+                <Label Grid.Row="2" Grid.Column="1" Text="{Binding Director}"/>
+            </Grid>
+        </DataTemplate>
+        <template:MovieDataTemplateSelector x:Key="movieSelector" 
+                                            PopularDataTemplate="{StaticResource PopularDataTemplate}" 
+                                            MovieDataTemplate="{StaticResource MovieDataTemplate}"/>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        
+        <!-- Xaml ile statik-->
+        <!--<CollectionView>
+            <CollectionView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Samsung S5</x:String>
+                    <x:String>Samsung S5</x:String>
+                    <x:String>Samsung S5</x:String>
+                    <x:String>Samsung S5</x:String>
+                    <x:String>Samsung S5</x:String>
+                </x:Array>
+            </CollectionView.ItemsSource>
+        </CollectionView>-->
+
+        <!-- Code Behind -->
+        <CollectionView x:Name="movieList" ItemTemplate="{StaticResource movieSelector}"></CollectionView>
+        
+    </ContentPage.Content>
+</ContentPage>

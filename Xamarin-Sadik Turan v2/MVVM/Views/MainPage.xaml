@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Course.MVVM.Views.MainPage"
+             
+             xmlns:local="clr-namespace:Course.MVVM.Views">
+    <ContentPage.Content>
+        <TableView Intent="Menu">
+            <TableRoot>
+                <TableSection Title="Selections">
+                    <TextCell Text="Movie List" Detail="Text" 
+                              Command="{Binding NavigateCommand}" 
+                              CommandParameter="{x:Type local:MovieList}"/>
+
+                    <TextCell Text="Single Selection" Detail="Text" 
+                              Command="{Binding NavigateCommand}" 
+                              CommandParameter="{x:Type local:SingleSelectionPage}"/>
+
+                    <TextCell Text="Multiple Selection" Detail="Text" 
+                              Command="{Binding NavigateCommand}" 
+                              CommandParameter="{x:Type local:MultipleSelectionPage}"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>

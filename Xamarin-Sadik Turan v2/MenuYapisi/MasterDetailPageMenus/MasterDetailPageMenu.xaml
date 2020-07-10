@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:Course.MenuYapisi.MasterDetailPageMenus.Sayfalar;assembly=Course"
+             x:Class="Course.MenuYapisi.MasterDetailPageMenus.MasterDetailPageMenu" NavigationPage.HasNavigationBar="False">
+    
+    <MasterDetailPage.Master>
+        <local:MenuMaster/>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage></NavigationPage>
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>
