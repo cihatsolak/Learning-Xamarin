@@ -1,0 +1,17 @@
+C:\Users\CihatSolak\source\repos\App2\App2\App2\bin\Debug\netstandard2.0\App2.deps.json
+C:\Users\CihatSolak\source\repos\App2\App2\App2\bin\Debug\netstandard2.0\App2.dll
+C:\Users\CihatSolak\source\repos\App2\App2\App2\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\CihatSolak\source\repos\App2\App2\App2\obj\Debug\netstandard2.0\App2.AssemblyInfoInputs.cache
+C:\Users\CihatSolak\source\repos\App2\App2\App2\obj\Debug\netstandard2.0\App2.AssemblyInfo.cs
+C:\Users\CihatSolak\source\repos\App2\App2\App2\bin\Debug\netstandard2.0\ref\App2.dll
+C:\Users\CihatSolak\source\repos\App2\App2\App2\bin\Debug\netstandard2.0\App2.pdb
+C:\Users\CihatSolak\source\repos\App2\App2\App2\obj\Debug\netstandard2.0\App2.csproj.CoreCompileInputs.cache
+C:\Users\CihatSolak\source\repos\App2\App2\App2\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\CihatSolak\source\repos\App2\App2\App2\obj\Debug\netstandard2.0\App2.dll
+C:\Users\CihatSolak\source\repos\App2\App2\App2\obj\Debug\netstandard2.0\ref\App2.dll
+C:\Users\CihatSolak\source\repos\App2\App2\App2\obj\Debug\netstandard2.0\App2.pdb
+C:\Users\CihatSolak\source\repos\App2\App2\App2\obj\Debug\netstandard2.0\App2.csprojAssemblyReference.cache
+C:\Users\CihatSolak\source\repos\App2\App2\App2\obj\Debug\netstandard2.0\ResimSec.xaml.g.cs
+C:\Users\CihatSolak\source\repos\App2\App2\App2\obj\Debug\netstandard2.0\Cars.xaml.g.cs
+C:\Users\CihatSolak\source\repos\App2\App2\App2\obj\Debug\netstandard2.0\CustomControls\ListCell.xaml.g.cs
+C:\Users\CihatSolak\source\repos\App2\App2\App2\obj\Debug\netstandard2.0\BehavioursPage.xaml.g.cs

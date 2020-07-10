@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UdemyCourse.Views.HesapMakinesi"
+             xmlns:viewModel="clr-namespace:UdemyCourse.ViewModels">
+
+    <ContentPage.BindingContext>
+        <viewModel:HesapMakinesiViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="ResultLayout" TargetType="StackLayout">
+                <Setter Property="BackgroundColor" Value="#4a3f35"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+            </Style>
+            <Style x:Key="Result" TargetType="Label">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="40"/>
+                <Setter Property="HorizontalOptions" Value="EndAndExpand"/>
+                <Setter Property="VerticalOptions" Value="EndAndExpand"/>
+                <Setter Property="Margin" Value="0,0,10,10"/>
+            </Style>
+            <Style x:Key="NumberButton" TargetType="Button">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="27"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="WidthRequest" Value="100"/>
+                <Setter Property="HeightRequest" Value="75"/>
+                <Setter Property="BackgroundColor" Value="#ECECEC"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <StackLayout Spacing="0">
+            <StackLayout Style="{StaticResource Key=ResultLayout}">
+                <Label Style="{StaticResource Key=Result}" Text="{Binding Total}"/>
+            </StackLayout>
+            
+            <Grid RowSpacing="1" ColumnSpacing="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Text="C" Style="{StaticResource Key=NumberButton}" BackgroundColor="#E3E3E3"/>
+                <Button Text="7" Style="{StaticResource Key=NumberButton}" Grid.Row="1" Command="{Binding Number}" CommandParameter="7"/>
+                <Button Text="4" Style="{StaticResource Key=NumberButton}" Grid.Row="2" Command="{Binding Number}" CommandParameter="4"/>
+                <Button Text="1" Style="{StaticResource Key=NumberButton}" Grid.Row="3" Command="{Binding Number}" CommandParameter="1"/>
+                <Button Text="0" Style="{StaticResource Key=NumberButton}" Grid.Row="4" Grid.ColumnSpan="2"/>
+
+                <Button Text="+/-" Style="{StaticResource Key=NumberButton}" Grid.Column="1" BackgroundColor="#E3E3E3"/>
+                <Button Text="8" Style="{StaticResource Key=NumberButton}" Grid.Row="1" Grid.Column="1" Command="{Binding Number}" CommandParameter="8"/>
+                <Button Text="5" Style="{StaticResource Key=NumberButton}" Grid.Row="2" Grid.Column="1" Command="{Binding Number}" CommandParameter="5"/>
+                <Button Text="2" Style="{StaticResource Key=NumberButton}" Grid.Row="3" Grid.Column="1" Command="{Binding Number}" CommandParameter="2"/>
+
+                <Button Text="%" Style="{StaticResource Key=NumberButton}" Grid.Column="2" BackgroundColor="#E3E3E3"/>
+                <Button Text="9" Style="{StaticResource Key=NumberButton}" Grid.Row="1" Grid.Column="2" Command="{Binding Number}" CommandParameter="9"/>
+                <Button Text="6" Style="{StaticResource Key=NumberButton}" Grid.Row="2" Grid.Column="2" Command="{Binding Number}" CommandParameter="6"/>
+                <Button Text="3" Style="{StaticResource Key=NumberButton}" Grid.Row="3" Grid.Column="2" Command="{Binding Number}" CommandParameter="3"/>
+                <Button Text="." Style="{StaticResource Key=NumberButton}" Grid.Row="4" Grid.Column="2" Command="{Binding Number}" CommandParameter="3"/>
+
+                <Button Text="div" Style="{StaticResource Key=NumberButton}" Grid.Column="3" BackgroundColor="#F79F36" TextColor="White"/>
+                <Button Text="X" Style="{StaticResource Key=NumberButton}" Grid.Row="1" Grid.Column="3" BackgroundColor="#F79F36" TextColor="White"/>
+                <Button Text="-" Style="{StaticResource Key=NumberButton}" Grid.Row="2" Grid.Column="3" BackgroundColor="#F79F36" TextColor="White"/>
+                <Button Text="+" Style="{StaticResource Key=NumberButton}" Grid.Row="3" Grid.Column="3" BackgroundColor="#F79F36" TextColor="White"/>
+                <Button Text="=" Style="{StaticResource Key=NumberButton}" Grid.Row="4" Grid.Column="3" BackgroundColor="#F79F36" TextColor="White"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

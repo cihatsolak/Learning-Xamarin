@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FirstApplication.App"
+             
+             xmlns:converter="clr-namespace:FirstApplication.IValueConverters.Converter">
+    
+    <Application.Resources>
+        <ResourceDictionary>
+            <converter:TeamImageConverter x:Key="TeamImageConverter" 
+                                          fenerbahce="fenerbahce.jpg" 
+                                          besiktas="besiktas.png"
+                                          galatasaray="galatasaray.png"
+                                          trabzonspor="trabzonspor.png"/>
+        </ResourceDictionary>
+    </Application.Resources>
+    
+</Application>

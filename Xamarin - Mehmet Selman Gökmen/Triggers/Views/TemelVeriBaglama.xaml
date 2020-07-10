@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UdemyCourse.Views.TemelVeriBaglama"
+             xmlns:viewModel="clr-namespace:UdemyCourse.ViewModels">
+
+    <ContentPage.BindingContext>
+        <viewModel:SayiTahminViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout Margin="10" HorizontalOptions="Center">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <BoxView BackgroundColor="{Binding BackGroundColor}" IsEnabled="{Binding Finished}"/>
+                <Label Text="{Binding Information}" FontSize="Medium" FontAttributes="Italic" IsEnabled="{Binding Finished}" Grid.Row="1"/>
+                <Entry Text="{Binding Guess}" Grid.Row="2" IsEnabled="{Binding Finished}"/>
+                <Button Command="{Binding ResetGame}" Text="Yeniden Başlat" IsVisible="{Binding ResetGameButtonVisible}" Grid.Row="3"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App2.Cars"
+             xmlns:viewModel="clr-namespace:App2"
+             x:Name="ContentPage"
+             xmlns:customcontrol="clr-namespace:App2.CustomControls">
+
+    <ContentPage.BindingContext>
+        <viewModel:CarsViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="MenuItem1" Order="Secondary" Icon="Microsoft.png" Text="Item 1" Priority="0" />
+        <ToolbarItem Name="MenuItem2" Order="Secondary" Icon="Xamarin.png" Text="Item 2" Priority="1" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding Cars}" RowHeight="200">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <!--<TextCell Text="{Binding Name}" Detail="{Binding Detail}">
+                            <TextCell.ContextActions>
+                                <MenuItem Text="Sil" Command="{Binding Source={x:Reference ContentPage}, Path=BindingContext.DeleteCar}" CommandParameter="{Binding .}"/>
+                                <MenuItem Text="Sil" Command="{Binding Source={x:Reference ContentPage}, Path=BindingContext.Send}" CommandParameter="{Binding .}"/>
+                            </TextCell.ContextActions>
+                        </TextCell>-->
+                        <ViewCell>
+                            <customcontrol:ListCell Title="{Binding Name}" Description="{Binding Detail}"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

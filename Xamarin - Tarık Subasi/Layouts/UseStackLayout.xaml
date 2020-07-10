@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FirstApplication.Layouts.UseStackLayout">
+    
+    <ContentPage.Content>
+        <StackLayout Spacing="0" VerticalOptions="FillAndExpand">
+
+            <StackLayout BackgroundColor="Green" Orientation="Horizontal" VerticalOptions="FillAndExpand">
+                <Button Text="Push! Me" BackgroundColor="Chocolate" VerticalOptions="CenterAndExpand"/>
+                <Entry Placeholder="Bir veri giriniz." BackgroundColor="Pink" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                <Switch BackgroundColor="DarkBlue" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="Red" VerticalOptions="FillAndExpand">
+                <Label Text="Xamarin Form'a Hoşgeldinz" BackgroundColor="Azure" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="LightYellow" VerticalOptions="FillAndExpand">
+               
+            </StackLayout>
+            
+        </StackLayout> 
+    </ContentPage.Content>
+    
+</ContentPage>

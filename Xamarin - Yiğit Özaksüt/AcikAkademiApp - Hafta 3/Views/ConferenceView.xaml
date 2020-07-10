@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:viewModel="clr-namespace:AcikAkademiApp.ViewModels"
+             x:Class="AcikAkademiApp.Views.ConferenceView"
+             Title="Konferanslar"
+             x:Name="ConferencePage">
+
+    <ContentPage.BindingContext>
+        <viewModel:ConferenceViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar  Text="{Binding Keyword}" Placeholder="Etkinlik Ara.." SearchCommand="{Binding SearchCommand}"/>
+
+            <ListView ItemsSource="{Binding Conferences}" RowHeight="130" Footer="{Binding Count}"
+                  IsPullToRefreshEnabled="True"
+                  IsRefreshing="{Binding IsRefreshing}" 
+                  RefreshCommand="{Binding RefreshCommand}">
+
+                <ListView.Header>
+                    <ContentView Padding="0,5">
+                        <Label FontSize="Medium" TextColor="Black" Text="Microsoft Açık Akademi Sanal Sınıflar" 
+                           HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                    </ContentView>
+                </ListView.Header>
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            
+                            <ViewCell.ContextActions>
+                                <MenuItem Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference ConferencePage}}" 
+                                          CommandParameter="{Binding}" 
+                                          Text="Sil"/>
+                                <MenuItem Command="{Binding Path=BindingContext.UpdateCommand, Source={x:Reference ConferencePage}}" 
+                                          CommandParameter="{Binding}" 
+                                          Text="Güncelle"/>
+                                <MenuItem Command="{Binding Path=BindingContext.DetailCommand, Source={x:Reference ConferencePage}}" 
+                                          CommandParameter="{Binding}" 
+                                          Text="Detay"/>
+                            </ViewCell.ContextActions>
+                            
+                            <StackLayout Orientation="Horizontal" Spacing="25">
+                                <Image Source="{Binding Image}" WidthRequest="60" HeightRequest="60"/>
+                                <StackLayout BackgroundColor="#f4f4f4">
+                                    <Label Text="{Binding Title}" FontAttributes="Bold" FontSize="Medium" TextColor="Orange"/>
+                                    <Label Text="{Binding PublishDate}" FontSize="Small" TextColor="Gray"/>
+                                    <Label Text="{Binding Description}" FontSize="Small" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+                <ListView.FooterTemplate>
+                    <DataTemplate>
+                        <ContentView Padding="0,5,5,0">
+
+                            <Label FontSize="Medium" TextColor="Green" Text="{Binding ., StringFormat='Toplam Kayıt Sayısı: {0}'}"
+                               VerticalOptions="Center" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
+
+                        </ContentView>
+                    </DataTemplate>
+                </ListView.FooterTemplate>
+
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FirstApplication.ListViewDataBinding.SampleListView"
+             
+             xmlns:local="clr-namespace:FirstApplication.CustomRendererAll">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="cihat"/>
+            <ListView x:Name="GameList" IsPullToRefreshEnabled="True" Refreshing="GameList_Refreshing">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <local:ExtendedViewCell SelectedBackgroundColor="Purple">
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Ekle" Clicked="Handle_MenuEkle"/>
+                                <MenuItem Text="Sil" x:Name="onDelete" Clicked="Handle_MenuSil" CommandParameter="{Binding Id}"/>
+                            </ViewCell.ContextActions>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="{Binding ImageUrl}" Aspect="Fill"/>
+                                <Entry Placeholder="{Binding Name}" Grid.Column="1"/>
+                                <Button Text="{Binding Price}" Grid.Column="2"/>
+                            </Grid>
+                        </local:ExtendedViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

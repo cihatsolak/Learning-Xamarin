@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UdemyCourse.Views.TriggerKullanimi"
+             xmlns:customTrigger="clr-namespace:UdemyCourse.Triggers">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Kullanıcı Adını Giriniz">
+                
+                <!-- Trigger: Herhangi bir olay gerçekleştiğinde ne yapılması gerekiyor?-->
+                <!-- TargetType: Hangi element'e ait (Entry, Button, Label, Picker vs vs)-->
+                <!-- Property: Elementin hangi özelliği? Örnek: Entry'e focus olduğunda -->
+                <!-- Value: True-> Tıklandığında, False -> Entry'den Çıkıldığında -->
+                <!-- EventTrigger: Herhangi bir event'e bağlı olarak işlem yaptığımız -->
+                <!-- MultiTrigger: Birden fazka olayın tetiklenmesi -->
+                
+                <Entry.Triggers>
+                    <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                        <Setter Property="HeightRequest" Value="75"/>
+                    </Trigger>
+                </Entry.Triggers>
+            </Entry>
+
+            <Entry Placeholder="E-posta adresinizi giriniz" x:Name="Eposta"/>
+            <Switch x:Name="RegisterSlider"/>
+            <Button Text="Kayıt Ol" IsEnabled="{Binding Source={x:Reference RegisterSlider}, Path=IsToggled}">
+                <Button.Triggers>
+                    <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference Eposta}, Path=Text.Length}" Value="5">
+                        <Setter Property="IsEnabled" Value="True"/>
+                    </DataTrigger>
+                </Button.Triggers>
+            </Button>
+
+            <Entry Placeholder="Dene">
+                <Entry.Triggers>
+                    <EventTrigger Event="TextChanged">
+                        <customTrigger:MyEntryTrigger/>
+                    </EventTrigger>
+                </Entry.Triggers>
+            </Entry>
+
+            <StackLayout Orientation="Vertical" BackgroundColor="Pink" Margin="0,50,0,0">
+                <Entry x:Name="username"/>
+                <Switch x:Name="accept"/>
+                
+                <Button Text="Save">
+                    <Button.Triggers>
+                        <MultiTrigger TargetType="Button">
+                            <MultiTrigger.Conditions>
+                                <BindingCondition Binding="{Binding Source={x:Reference username}, Path=Text.Length}" Value="0"/>
+                                <BindingCondition Binding="{Binding Source={x:Reference accept}, Path=IsToggled}" Value="False"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="IsEnabled" Value="False"/>
+                        </MultiTrigger>
+                    </Button.Triggers>
+                </Button>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

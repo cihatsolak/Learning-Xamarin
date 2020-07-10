@@ -1,0 +1,14 @@
+C:\Users\CihatSolak\source\repos\XamarinDataBinding\XamarinDataBinding\XamarinDataBinding\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\CihatSolak\source\repos\XamarinDataBinding\XamarinDataBinding\XamarinDataBinding\obj\Debug\netstandard2.0\Views\CustomerMainPage.xaml.g.cs
+C:\Users\CihatSolak\source\repos\XamarinDataBinding\XamarinDataBinding\XamarinDataBinding\obj\Debug\netstandard2.0\XamarinDataBinding.csproj.CoreCompileInputs.cache
+C:\Users\CihatSolak\source\repos\XamarinDataBinding\XamarinDataBinding\XamarinDataBinding\obj\Debug\netstandard2.0\XamarinDataBinding.AssemblyInfoInputs.cache
+C:\Users\CihatSolak\source\repos\XamarinDataBinding\XamarinDataBinding\XamarinDataBinding\obj\Debug\netstandard2.0\XamarinDataBinding.AssemblyInfo.cs
+C:\Users\CihatSolak\source\repos\XamarinDataBinding\XamarinDataBinding\XamarinDataBinding\bin\Debug\netstandard2.0\XamarinDataBinding.deps.json
+C:\Users\CihatSolak\source\repos\XamarinDataBinding\XamarinDataBinding\XamarinDataBinding\bin\Debug\netstandard2.0\XamarinDataBinding.dll
+C:\Users\CihatSolak\source\repos\XamarinDataBinding\XamarinDataBinding\XamarinDataBinding\bin\Debug\netstandard2.0\ref\XamarinDataBinding.dll
+C:\Users\CihatSolak\source\repos\XamarinDataBinding\XamarinDataBinding\XamarinDataBinding\bin\Debug\netstandard2.0\XamarinDataBinding.pdb
+C:\Users\CihatSolak\source\repos\XamarinDataBinding\XamarinDataBinding\XamarinDataBinding\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\CihatSolak\source\repos\XamarinDataBinding\XamarinDataBinding\XamarinDataBinding\obj\Debug\netstandard2.0\XamarinDataBinding.dll
+C:\Users\CihatSolak\source\repos\XamarinDataBinding\XamarinDataBinding\XamarinDataBinding\obj\Debug\netstandard2.0\ref\XamarinDataBinding.dll
+C:\Users\CihatSolak\source\repos\XamarinDataBinding\XamarinDataBinding\XamarinDataBinding\obj\Debug\netstandard2.0\XamarinDataBinding.pdb
+C:\Users\CihatSolak\source\repos\XamarinDataBinding\XamarinDataBinding\XamarinDataBinding\obj\Debug\netstandard2.0\XamarinDataBinding.csprojAssemblyReference.cache

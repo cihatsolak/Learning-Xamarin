@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinDataBinding.Views.CustomerMainPage"
+             
+             xmlns:viewModels="clr-namespace:XamarinDataBinding.ViewModels;assembly=XamarinDataBinding"
+             x:Name="customerMainPage">
+
+    <ContentPage.BindingContext>
+        <viewModels:CustomerViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="sayfa geldi"/>
+            <ListView HasUnevenRows="True" ItemsSource="{Binding Customers}"
+                      IsPullToRefreshEnabled="True"
+                      RefreshCommand="{Binding Path=BindingContext.RefreshCommand, Source={x:Reference customerMainPage}}"
+                      IsRefreshing="{Binding IsRefreshing, Mode=OneWay}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" Detail="{Binding Job}">
+                            <TextCell.ContextActions>
+                                <MenuItem Text="Sil" IsDestructive="True" 
+                                          CommandParameter="{Binding}"
+                                          Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference customerMainPage}}"/>
+                                <MenuItem Text="Güncelle" IsDestructive="True"
+                                          CommandParameter="{Binding}"
+                                          Command="{Binding Path=BindingContext.UpdateCommand, Source={x:Reference customerMainPage}}"/>
+                            </TextCell.ContextActions>
+                        </TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

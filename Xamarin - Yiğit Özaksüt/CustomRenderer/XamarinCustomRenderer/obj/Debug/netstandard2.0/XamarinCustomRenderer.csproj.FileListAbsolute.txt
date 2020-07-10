@@ -1,0 +1,14 @@
+C:\Users\CihatSolak\source\repos\XamarinCustomRenderer\XamarinCustomRenderer\XamarinCustomRenderer\bin\Debug\netstandard2.0\XamarinCustomRenderer.deps.json
+C:\Users\CihatSolak\source\repos\XamarinCustomRenderer\XamarinCustomRenderer\XamarinCustomRenderer\bin\Debug\netstandard2.0\XamarinCustomRenderer.dll
+C:\Users\CihatSolak\source\repos\XamarinCustomRenderer\XamarinCustomRenderer\XamarinCustomRenderer\bin\Debug\netstandard2.0\ref\XamarinCustomRenderer.dll
+C:\Users\CihatSolak\source\repos\XamarinCustomRenderer\XamarinCustomRenderer\XamarinCustomRenderer\bin\Debug\netstandard2.0\XamarinCustomRenderer.pdb
+C:\Users\CihatSolak\source\repos\XamarinCustomRenderer\XamarinCustomRenderer\XamarinCustomRenderer\obj\Debug\netstandard2.0\XamarinCustomRenderer.csprojAssemblyReference.cache
+C:\Users\CihatSolak\source\repos\XamarinCustomRenderer\XamarinCustomRenderer\XamarinCustomRenderer\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\CihatSolak\source\repos\XamarinCustomRenderer\XamarinCustomRenderer\XamarinCustomRenderer\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\CihatSolak\source\repos\XamarinCustomRenderer\XamarinCustomRenderer\XamarinCustomRenderer\obj\Debug\netstandard2.0\XamarinCustomRenderer.csproj.CoreCompileInputs.cache
+C:\Users\CihatSolak\source\repos\XamarinCustomRenderer\XamarinCustomRenderer\XamarinCustomRenderer\obj\Debug\netstandard2.0\XamarinCustomRenderer.AssemblyInfoInputs.cache
+C:\Users\CihatSolak\source\repos\XamarinCustomRenderer\XamarinCustomRenderer\XamarinCustomRenderer\obj\Debug\netstandard2.0\XamarinCustomRenderer.AssemblyInfo.cs
+C:\Users\CihatSolak\source\repos\XamarinCustomRenderer\XamarinCustomRenderer\XamarinCustomRenderer\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\CihatSolak\source\repos\XamarinCustomRenderer\XamarinCustomRenderer\XamarinCustomRenderer\obj\Debug\netstandard2.0\XamarinCustomRenderer.dll
+C:\Users\CihatSolak\source\repos\XamarinCustomRenderer\XamarinCustomRenderer\XamarinCustomRenderer\obj\Debug\netstandard2.0\ref\XamarinCustomRenderer.dll
+C:\Users\CihatSolak\source\repos\XamarinCustomRenderer\XamarinCustomRenderer\XamarinCustomRenderer\obj\Debug\netstandard2.0\XamarinCustomRenderer.pdb

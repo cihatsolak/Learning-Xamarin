@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FirstApplication.IslevselNugetPackages.PopUpPlugins.PopUpRealPage"
+             
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+             CloseWhenBackgroundIsClicked="False"
+             IsAnimating="True">
+
+    <!-- Pop up Animasyonu Özelikleri  -->
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation 
+            PositionIn="Center"
+            PositionOut="Center"
+            ScaleIn="1.2"
+            ScaleOut="0.8"
+            DurationIn="400"
+            DurationOut="300"
+            EasingIn="SinInOut"
+            EasingOut="SinIn"
+            HasBackgroundAnimation="True"/>
+    </pages:PopupPage.Animation>
+    <!-- Pop up Animasyonu Özelikleri  -->
+    
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="Transparent" Margin="15,0,15,0" >
+            <Frame BackgroundColor="#EEEEEE" CornerRadius="10">
+                <StackLayout>
+
+                    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="#EEEEEE" Margin="15,0,15,0" x:Name="PopVis">
+                        <StackLayout Padding="0,0,0,0" BackgroundColor="#EEEEEE" Orientation="Horizontal">
+                            <!--<Label Text="Atama Detay" Font="Bold" FontSize="20" HorizontalOptions="CenterAndExpand" TextColor="Black" Margin="0,0,0,0"></Label>-->
+                        </StackLayout>
+                        <Label Text="Kullanıcı"  TextColor="Black"></Label>
+                        <Picker BackgroundColor="White" TextColor="Black" x:Name="Kullanici" HeightRequest="40"></Picker>
+                        <Label Text="Açıklama"  TextColor="Black"></Label>
+                        <Editor TextColor="Black" BackgroundColor="White" HeightRequest="160" x:Name="Yorum"></Editor>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" BackgroundColor="#EEEEEE">
+                            <Button Text="Tamam" TextColor="Black" x:Name="AtaTamam" BackgroundColor="#EEEEEE"></Button>
+                            <Button Text="İptal" TextColor="Black" x:Name="Ataİptal" BackgroundColor="#EEEEEE"></Button>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</pages:PopupPage>

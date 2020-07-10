@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "dgSpecHash": "BhuXp8Xv9aTexwi+WZgz+U7NAEP6QYuLy4qm1eyW43TlXl44IBgpBYhq8qHEGZDdR59UrAbMuYSnAXc76XHLJA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\CihatSolak\\Desktop\\Xamarin\\Xamarin - Tarık Subasi\\FirstApplication\\FirstApplication\\FirstApplication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\CihatSolak\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\CihatSolak\\.nuget\\packages\\plugin.multilingual\\1.0.2\\plugin.multilingual.1.0.2.nupkg.sha512",
+    "C:\\Users\\CihatSolak\\.nuget\\packages\\rg.plugins.popup\\2.0.0.2\\rg.plugins.popup.2.0.0.2.nupkg.sha512",
+    "C:\\Users\\CihatSolak\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\CihatSolak\\.nuget\\packages\\thrivegmbh.bottomnavigationbar.xf\\1.0.2\\thrivegmbh.bottomnavigationbar.xf.1.0.2.nupkg.sha512",
+    "C:\\Users\\CihatSolak\\.nuget\\packages\\xam.plugin.connectivity\\3.2.0\\xam.plugin.connectivity.3.2.0.nupkg.sha512",
+    "C:\\Users\\CihatSolak\\.nuget\\packages\\xam.plugin.externalmaps\\4.0.1\\xam.plugin.externalmaps.4.0.1.nupkg.sha512",
+    "C:\\Users\\CihatSolak\\.nuget\\packages\\xam.plugins.forms.imagecircle\\3.0.0.5\\xam.plugins.forms.imagecircle.3.0.0.5.nupkg.sha512",
+    "C:\\Users\\CihatSolak\\.nuget\\packages\\xam.plugins.settings\\3.1.1\\xam.plugins.settings.3.1.1.nupkg.sha512",
+    "C:\\Users\\CihatSolak\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\CihatSolak\\.nuget\\packages\\xamarin.forms\\4.7.0.813-pre2\\xamarin.forms.4.7.0.813-pre2.nupkg.sha512",
+    "C:\\Users\\CihatSolak\\.nuget\\packages\\xamforms.enhanced.calendar\\1.2.2\\xamforms.enhanced.calendar.1.2.2.nupkg.sha512",
+    "C:\\Users\\CihatSolak\\.nuget\\packages\\zxing.net.mobile\\2.4.1\\zxing.net.mobile.2.4.1.nupkg.sha512",
+    "C:\\Users\\CihatSolak\\.nuget\\packages\\zxing.net.mobile.forms\\2.4.1\\zxing.net.mobile.forms.2.4.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ThriveGmbH.BottomNavigationBar.XF 1.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ThriveGmbH.BottomNavigationBar.XF",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
+}

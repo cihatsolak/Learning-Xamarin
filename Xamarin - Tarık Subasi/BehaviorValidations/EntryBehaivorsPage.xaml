@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FirstApplication.BehaviorValidations.EntryBehaivorsPage"
+             
+             
+            xmlns:local="clr-namespace:FirstApplication.BehaviorValidations.Behaviors">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0,50"/>
+    </ContentPage.Padding>
+    
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Entry x:Name="password" Placeholder="Şifreiniz" IsPassword="True">
+                <Entry.Behaviors>
+                    <local:PasswordValidation/>
+                </Entry.Behaviors>
+            </Entry>
+
+            <Entry x:Name="email" Placeholder="E-posta adresiniz" Keyboard="Email">
+                <Entry.Behaviors>
+                    <local:EmailValidation/>
+                </Entry.Behaviors>
+            </Entry>
+            
+            <Label x:Name="captchaLabel"/>
+            
+            <Entry x:Name="captcha" Placeholder="captcha" local:NumericValidation.AttachBehavior="True"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

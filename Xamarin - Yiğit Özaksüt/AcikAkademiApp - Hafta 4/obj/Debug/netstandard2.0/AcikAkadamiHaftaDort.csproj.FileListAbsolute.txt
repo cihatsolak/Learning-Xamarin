@@ -1,0 +1,16 @@
+C:\Users\CihatSolak\source\repos\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\bin\Debug\netstandard2.0\AcikAkadamiHaftaDort.deps.json
+C:\Users\CihatSolak\source\repos\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\bin\Debug\netstandard2.0\AcikAkadamiHaftaDort.dll
+C:\Users\CihatSolak\source\repos\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\bin\Debug\netstandard2.0\ref\AcikAkadamiHaftaDort.dll
+C:\Users\CihatSolak\source\repos\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\bin\Debug\netstandard2.0\AcikAkadamiHaftaDort.pdb
+C:\Users\CihatSolak\source\repos\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\obj\Debug\netstandard2.0\AcikAkadamiHaftaDort.csprojAssemblyReference.cache
+C:\Users\CihatSolak\source\repos\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\CihatSolak\source\repos\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\obj\Debug\netstandard2.0\AcikAkadamiHaftaDort.AssemblyInfoInputs.cache
+C:\Users\CihatSolak\source\repos\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\obj\Debug\netstandard2.0\AcikAkadamiHaftaDort.AssemblyInfo.cs
+C:\Users\CihatSolak\source\repos\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\obj\Debug\netstandard2.0\AcikAkadamiHaftaDort.dll
+C:\Users\CihatSolak\source\repos\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\obj\Debug\netstandard2.0\ref\AcikAkadamiHaftaDort.dll
+C:\Users\CihatSolak\source\repos\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\obj\Debug\netstandard2.0\AcikAkadamiHaftaDort.pdb
+C:\Users\CihatSolak\source\repos\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\obj\Debug\netstandard2.0\Views\DeviceInformation.xaml.g.cs
+C:\Users\CihatSolak\source\repos\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\obj\Debug\netstandard2.0\Views\NoteEntryPage.xaml.g.cs
+C:\Users\CihatSolak\source\repos\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\obj\Debug\netstandard2.0\Views\NotesPage.xaml.g.cs
+C:\Users\CihatSolak\source\repos\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\obj\Debug\netstandard2.0\AcikAkadamiHaftaDort.csproj.CoreCompileInputs.cache
+C:\Users\CihatSolak\source\repos\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\AcikAkadamiHaftaDort\obj\Debug\netstandard2.0\XamlC.stamp

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FirstApplication.LocalizationYapısı.LocalizationSamplePage"
+             Title="{translator:Translate approve}"
+             
+             xmlns:translator="clr-namespace:FirstApplication.LocalizationYapısı.Helper">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{translator:Translate cancel}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="{translator:Translate approve}"/>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="{translator:Translate red}"/>
+            <Label Text="{translator:Translate yellow}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="{translator:Translate reject}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

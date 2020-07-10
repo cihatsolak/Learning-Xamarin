@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App2.BehavioursPage"
+             xmlns:behaviours="clr-namespace:App2.Behaviours">
+    <ContentPage.Content>
+        <StackLayout Margin="50" VerticalOptions="Center">
+            <Label Text="Giriş Yapınız" HorizontalOptions="Center" FontSize="Large"/>
+            
+            <Entry x:Name="entryEmail" Placeholder="Email" Keyboard="Email">
+                <Entry.Behaviors>
+                    <behaviours:EmailBehaviour x:Name="EmailBehaviours"/>
+                </Entry.Behaviors>
+            </Entry>
+            
+            <Label 
+                Text="Lütfen geçerli bir email adresi giriniz." 
+                TextColor="Red" 
+                FontSize="Small" 
+                Margin="5,0,0,0"
+                IsVisible="{Binding Source={x:Reference EmailBehaviours}, Path=IsEmailAlert}"/>
+            
+            <Button Text="Giriş Yap" IsEnabled="{Binding Source={x:Reference EmailBehaviours}, Path=IsValid}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

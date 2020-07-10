@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FirstApplication.Elements.SampleElement">
+    <ContentPage.Content>
+        <StackLayout Spacing="10">
+            <Entry x:Name="entryText"/>
+            <Button Text="You Pushed Me!" Clicked="Handle_Show"/>
+            <StackLayout>
+                <Slider x:Name="SliderControl" Maximum="100" Minimum="0"/>
+                <Label Text="{Binding Source={x:Reference SliderControl},Path=Value,StringFormat='{0:F0}'}"/>
+            </StackLayout>
+            <StackLayout>
+                <DatePicker x:Name="firstDate"/>
+                <DatePicker MinimumDate="{Binding Source= {x:Reference firstDate}, Path=Date}"/>
+            </StackLayout>
+            <Picker Title="Lütfen Şehir Seçiniz." 
+                    ItemsSource="{Binding Cities}" 
+                    ItemDisplayBinding="{Binding Name}" 
+                    SelectedItem="{Binding SelectedCity}">
+            </Picker>
+            <Label Text="{Binding MyCity}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,16 @@
+C:\Users\CihatSolak\source\repos\AcikAkademiApp\AcikAkademiApp\AcikAkademiApp\bin\Debug\netstandard2.0\AcikAkademiApp.deps.json
+C:\Users\CihatSolak\source\repos\AcikAkademiApp\AcikAkademiApp\AcikAkademiApp\bin\Debug\netstandard2.0\AcikAkademiApp.dll
+C:\Users\CihatSolak\source\repos\AcikAkademiApp\AcikAkademiApp\AcikAkademiApp\bin\Debug\netstandard2.0\ref\AcikAkademiApp.dll
+C:\Users\CihatSolak\source\repos\AcikAkademiApp\AcikAkademiApp\AcikAkademiApp\bin\Debug\netstandard2.0\AcikAkademiApp.pdb
+C:\Users\CihatSolak\source\repos\AcikAkademiApp\AcikAkademiApp\AcikAkademiApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\CihatSolak\source\repos\AcikAkademiApp\AcikAkademiApp\AcikAkademiApp\obj\Debug\netstandard2.0\Views\ConferenceView.xaml.g.cs
+C:\Users\CihatSolak\source\repos\AcikAkademiApp\AcikAkademiApp\AcikAkademiApp\obj\Debug\netstandard2.0\Views\PersonView.xaml.g.cs
+C:\Users\CihatSolak\source\repos\AcikAkademiApp\AcikAkademiApp\AcikAkademiApp\obj\Debug\netstandard2.0\AcikAkademiApp.csproj.CoreCompileInputs.cache
+C:\Users\CihatSolak\source\repos\AcikAkademiApp\AcikAkademiApp\AcikAkademiApp\obj\Debug\netstandard2.0\AcikAkademiApp.AssemblyInfoInputs.cache
+C:\Users\CihatSolak\source\repos\AcikAkademiApp\AcikAkademiApp\AcikAkademiApp\obj\Debug\netstandard2.0\AcikAkademiApp.AssemblyInfo.cs
+C:\Users\CihatSolak\source\repos\AcikAkademiApp\AcikAkademiApp\AcikAkademiApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\CihatSolak\source\repos\AcikAkademiApp\AcikAkademiApp\AcikAkademiApp\obj\Debug\netstandard2.0\AcikAkademiApp.dll
+C:\Users\CihatSolak\source\repos\AcikAkademiApp\AcikAkademiApp\AcikAkademiApp\obj\Debug\netstandard2.0\ref\AcikAkademiApp.dll
+C:\Users\CihatSolak\source\repos\AcikAkademiApp\AcikAkademiApp\AcikAkademiApp\obj\Debug\netstandard2.0\AcikAkademiApp.pdb
+C:\Users\CihatSolak\source\repos\AcikAkademiApp\AcikAkademiApp\AcikAkademiApp\obj\Debug\netstandard2.0\Views\ConferenceDetailView.xaml.g.cs
+C:\Users\CihatSolak\source\repos\AcikAkademiApp\AcikAkademiApp\AcikAkademiApp\obj\Debug\netstandard2.0\AcikAkademiApp.csprojAssemblyReference.cache

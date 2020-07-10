@@ -1,0 +1,11 @@
+C:\Users\CihatSolak\source\repos\MahmutSelmanGokmen\UdemyCourse\UdemyCourse\bin\Debug\netstandard2.0\UdemyCourse.deps.json
+C:\Users\CihatSolak\source\repos\MahmutSelmanGokmen\UdemyCourse\UdemyCourse\bin\Debug\netstandard2.0\UdemyCourse.dll
+C:\Users\CihatSolak\source\repos\MahmutSelmanGokmen\UdemyCourse\UdemyCourse\obj\Debug\netstandard2.0\UdemyCourse.csprojAssemblyReference.cache
+C:\Users\CihatSolak\source\repos\MahmutSelmanGokmen\UdemyCourse\UdemyCourse\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\CihatSolak\source\repos\MahmutSelmanGokmen\UdemyCourse\UdemyCourse\obj\Debug\netstandard2.0\Views\HesapMakinesi.xaml.g.cs
+C:\Users\CihatSolak\source\repos\MahmutSelmanGokmen\UdemyCourse\UdemyCourse\obj\Debug\netstandard2.0\Views\LayoutTurleri.xaml.g.cs
+C:\Users\CihatSolak\source\repos\MahmutSelmanGokmen\UdemyCourse\UdemyCourse\obj\Debug\netstandard2.0\Views\TemelVeriBaglama.xaml.g.cs
+C:\Users\CihatSolak\source\repos\MahmutSelmanGokmen\UdemyCourse\UdemyCourse\obj\Debug\netstandard2.0\Views\TriggerKullanimi.xaml.g.cs
+C:\Users\CihatSolak\source\repos\MahmutSelmanGokmen\UdemyCourse\UdemyCourse\obj\Debug\netstandard2.0\Views\XamarinBilesinleri.xaml.g.cs
+C:\Users\CihatSolak\source\repos\MahmutSelmanGokmen\UdemyCourse\UdemyCourse\obj\Debug\netstandard2.0\UdemyCourse.AssemblyInfoInputs.cache
+C:\Users\CihatSolak\source\repos\MahmutSelmanGokmen\UdemyCourse\UdemyCourse\obj\Debug\netstandard2.0\UdemyCourse.AssemblyInfo.cs
