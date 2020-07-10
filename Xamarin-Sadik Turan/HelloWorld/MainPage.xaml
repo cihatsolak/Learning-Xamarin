@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HelloWorld.MainPage">
+    
+    <StackLayout BindingContext="{x:Reference FormSlider}" HorizontalOptions="Center" VerticalOptions="Center">
+
+        <BoxView Color="Yellow" Opacity="{Binding}"/>
+
+        <Label Text="{Binding Value, StringFormat='Value is {0:F2}'}" 
+            Opacity="{Binding Value}"/>
+
+        <Slider Maximum="100" Minimum="0" x:Name="FormSlider"/>
+        <Label x:Name="SliderLabel" />
+
+        <Button x:Name="AfterPage" Clicked="AfterPage_Clicked" Text="Diğer Sayfaya Git" BackgroundColor="AliceBlue"></Button>
+    </StackLayout>
+
+</ContentPage>

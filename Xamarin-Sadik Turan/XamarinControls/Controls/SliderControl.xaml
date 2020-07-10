@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinControls.Controls.SliderControl">
+    <ContentPage.Content>
+
+        <StackLayout>
+            
+            <!--Binding ile Yapımı-->
+            <!--<StackLayout Padding="50">
+                <Slider x:Name="SliderControl" BackgroundColor="Gray" Minimum="1" Maximum="100"/>
+                <Label Text="{Binding Source={x:Reference SliderControl}, Path=Value, StringFormat='{0:F0}'}"/>
+            </StackLayout>-->
+
+            <!--Code Behind ile Yapımı-->
+            <StackLayout Padding="50">
+                <Slider BackgroundColor="Yellow" Maximum="100" Minimum="1"  ValueChanged="SliderValue"/>
+                <Label x:Name="SliderValueChange"/>
+            </StackLayout>
+            
+            <!-- Yazı yönünü slider'a göre ayarlama -->
+            <StackLayout Padding="40">
+                <Slider x:Name="RotateSlider" BackgroundColor="Yellow" Maximum="360" Minimum="0"/>
+                <Label Text="Hello World" Rotation="{Binding Source={x:Reference RotateSlider}, Path=Value}" 
+                       FontSize="Large" VerticalOptions="CenterAndExpand"/>
+                <Label Text="{Binding Source={x:Reference RotateSlider}, Path=Value, StringFormat='{0:F0}'}"/>
+            </StackLayout>
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinControls.Controls.PopupsControl">
+
+    <ContentPage.Resources>
+        <!-- Css Dosyası Ekliyoruz -->
+        <StyleSheet Source="/css/style.css"/>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout Padding="40" Spacing="10">
+            
+            <!-- Sadece Alert-->
+            <Button StyleClass="btn-primary" Text="Display Alert" Clicked="displayAlert"/>
+            
+            <!-- Evet ya da Hayır-->
+            <Button StyleClass="btn-danger" Text="Get Response" Clicked="getResponse"/>
+            <Label x:Name="selectedResult"/>
+            
+            <!-- Alertten string dönüş almak-->
+            <Button StyleClass="btn-primary" Text="Get String" Clicked="getString"/>
+            <Label x:Name="selectedShare"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

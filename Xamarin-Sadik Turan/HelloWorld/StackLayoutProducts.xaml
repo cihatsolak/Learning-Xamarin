@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HelloWorld.StackLayout"
+             NavigationPage.HasNavigationBar="False" BackgroundColor="#f1f1f1" Padding="20,30">
+
+    <ContentPage.Content>
+
+      <ScrollView>
+            
+        <StackLayout Spacing="15">
+            <Label Text="Akıllı Saatler" TextColor="#fe9801" HorizontalOptions="Center" FontAttributes="Bold" FontSize="30"/>
+
+            <!--Product One-->
+            <StackLayout BackgroundColor="White" Padding="10,15">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://bit.ly/2LeSXSg" WidthRequest="100"/>
+
+                    <StackLayout>
+                        <Label FontSize="18" FontAttributes="Bold" Text="Apple Watch Seri 5"/>
+                        <Label Text="Hep Açık Retina ekran, EKG uygulaması, düşme algılama ve yerleşik pusula özellikleriyle bugüne kadarki en gelişmiş Apple Watch."/>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                            <Label Text="2099 TL" TextColor="#fe9801" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"/>
+                            <Button Text="Ürünü İncele"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+
+            <!--Product Two-->
+            <StackLayout BackgroundColor="White" Padding="10,15">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://bit.ly/2LeSXSg" WidthRequest="100"/>
+
+                    <StackLayout>
+                        <Label FontSize="18" FontAttributes="Bold" Text="Apple Watch Seri 5"/>
+                        <Label Text="Hep Açık Retina ekran, EKG uygulaması, düşme algılama ve yerleşik pusula özellikleriyle bugüne kadarki en gelişmiş Apple Watch."/>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                            <Label Text="2099 TL" TextColor="#fe9801" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"/>
+                            <Button Text="Ürünü İncele"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+
+            <!--Product Three-->
+            <StackLayout BackgroundColor="White" Padding="10,15">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://bit.ly/2LeSXSg" WidthRequest="100"/>
+
+                    <StackLayout>
+                        <Label FontSize="18" FontAttributes="Bold" Text="Apple Watch Seri 5"/>
+                        <Label Text="Hep Açık Retina ekran, EKG uygulaması, düşme algılama ve yerleşik pusula özellikleriyle bugüne kadarki en gelişmiş Apple Watch."/>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                            <Label Text="2099 TL" TextColor="#fe9801" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"/>
+                            <Button Text="Ürünü İncele"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+
+         </StackLayout>
+
+       </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+    
+    

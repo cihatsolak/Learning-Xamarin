@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Padding="0,20"  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:template="clr-namespace:XamarinCollectionView.CollectionViews.DataSelector"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinCollectionView.CollectionViews.DataBindingCollectionView">
+
+
+    <ContentPage.Resources>
+
+        <!-- Film listesi için (ViewComponent) -->
+        <DataTemplate x:Key="movieDataTemplate">
+            <Grid Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Image Grid.RowSpan="2"
+                           Source="{Binding ImageUrl}"
+                           Aspect="AspectFill"
+                           HeightRequest="60"
+                           WidthRequest="60" />
+                <Label Grid.Column="1"
+                           Text="{Binding Name}"
+                           FontAttributes="Bold" />
+                <Label Grid.Row="1"
+                           Grid.Column="1"
+                           Text="{Binding Description}"
+                           FontAttributes="Italic"
+                           VerticalOptions="End" />
+            </Grid>
+        </DataTemplate>
+
+        <!-- Popüler Film Listesi -->
+        <DataTemplate x:Key="popularMovieDataTemplate">
+            <Grid Padding="10" BackgroundColor="Gray">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Image Grid.RowSpan="2"
+                           Source="{Binding ImageUrl}"
+                           Aspect="AspectFill"
+                           HeightRequest="60"
+                           WidthRequest="60" />
+                <Label Grid.Column="1"
+                           Text="{Binding Name}"
+                           FontAttributes="Bold" />
+                <Label Grid.Row="1"
+                           Grid.Column="1"
+                           Text="{Binding Description}"
+                           FontAttributes="Italic"
+                           VerticalOptions="End" />
+            </Grid>
+        </DataTemplate>
+
+        <!--Rating'e göre data template seçme -->
+        <template:MovieDataTemplateSelector x:Key="movieSelector" 
+                                            MovieDataTemplate="{StaticResource movieDataTemplate}"
+                                            PopularMovieDataTemplate="{StaticResource popularMovieDataTemplate}">
+        </template:MovieDataTemplateSelector>
+        
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+
+        <!--<CollectionView x:Name="movielist" ItemsSource="{Binding MovieModel}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2"
+                           Source="{Binding ImageUrl}"
+                           Aspect="AspectFill"
+                           HeightRequest="60"
+                           WidthRequest="60" />
+                            <Label Grid.Column="1"
+                           Text="{Binding Name}"
+                           FontAttributes="Bold" />
+                        <Label Grid.Row="1"
+                           Grid.Column="1"
+                           Text="{Binding Description}"
+                           FontAttributes="Italic"
+                           VerticalOptions="End" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>-->
+
+        <!--Biz şimdi normalde film listesini burada listedik fakat başka bir yerde listemek istediğimizde 
+            tekrar tekrar aynı kodu yazmak yerine 2 farklı yöntem kullanabiliriz.
+            
+            VİEW COMPONENT
+        
+            1. Yöntem: App.xmal sayfasına yazabilir, oradan ItemTemplate özelliği ile çekebiliriz.
+            2. Yöntem: Bulunduğumuz sayfa da 2 farklı yerde film listesini göstereceksek eğer <Content.Resource></Content.Resource> içerisine yazarız.
+                       Tabi bu sefer durum böyle olduğunda sadece o sayfa içinde kullanabiliriz.
+         -->
+
+        <!-- 1.Yöntem : App.xaml aracılığı ile -->
+        <!--<CollectionView x:Name="movielist" ItemTemplate="{StaticResource movieDataTemplate}"/>-->
+
+        <!-- 2.Yöntem : <Content.Resource></Content.Resource> aracılığı ile. -->
+        <!--<CollectionView x:Name="movielist" ItemTemplate="{StaticResource popularMovieDataTemplate}"/>-->
+        
+        <!-- 3. Yöntem : Gelen rating'lere göre farklı template kullandırma-->
+        <CollectionView x:Name="movielist" ItemTemplate="{StaticResource movieSelector}">
+            
+            <CollectionView.ItemsLayout>
+                <!-- Yan yana 2 eleman diz. ve yatay yani sağa kaydıracağım. -->
+                <GridItemsLayout Orientation="Horizontal" Span="2" VerticalItemSpacing="20" HorizontalItemSpacing="30"></GridItemsLayout>
+                <!--<LinearItemsLayout Orientation="Vertical" ItemSpacing="20"/>-->
+            </CollectionView.ItemsLayout>
+        
+        </CollectionView>
+
+    </ContentPage.Content>
+
+</ContentPage>

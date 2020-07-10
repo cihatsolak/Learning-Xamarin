@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinLists.GroupingItems">
+   
+    <ContentPage.Content>
+
+        <!--
+        Grup şekilde listview'i yapılandırmak için ListView'in kendisine aşağıdaki gibi özelliler eklemeliyiz. 
+        (GroupDisplayBinding, GroupShortNameBinding, IsGroupingEnabled)
+        -->
+        
+        <ListView x:Name="listView" RowHeight="90" 
+                  GroupDisplayBinding="{Binding GroupName}" 
+                  GroupShortNameBinding="{Binding GroupShortName}"
+                  IsGroupingEnabled="True">
+            
+            <ListView.ItemTemplate>
+                <DataTemplate>
+
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="{Binding ImageUrl}"/>
+                            
+                            <StackLayout>
+                                <Label Text="{Binding Name}"/>
+                                <Label Text="{Binding Director}" TextColor="Gray"/>
+                            </StackLayout>
+
+                            <Button Text="&#xf35a;" FontSize="30" TextColor="Gray"
+                                    HorizontalOptions="EndAndExpand" FontFamily="{StaticResource FontAwesomeRegular}"/>
+
+                        </StackLayout>
+                    </ViewCell>
+                    
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+        </ListView>
+        
+    </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinControls.Controls.EntryControl">
+    <ContentPage.Content>
+        <StackLayout Padding="40">
+            
+            <!--
+            ReturnType="Search" : Eğer bir arama kutusu oluşturduysak bir arama işlemi için 
+            IsSpellCheckEnabled="True" : Yanlış bir kelime girdiğimizde, yanlış bir kelime girdiğimizde.
+            IsTextPredictionEnabled="True" : Klavyede yazı yazarken bizlere öneri sunması için, ist yazınca -> istanbul'u önersin gibi.
+            
+            TextChanged="Handle_Text_Changed" : Her değişiklik yaptığımızda devreye girer.
+            Completed="Handle_Completed" : entry'den çıkıp da okeye bastıgımızda devreye giriyor.
+            
+            TextArea: Editor
+            İnput : Entry
+            -->
+
+            <Label x:Name="resultLabel" Margin="15"/>
+
+            <Entry x:Name="names" Placeholder="Enter Name" ReturnType="Done" TextChanged="Handle_Text_Changed"/>
+            
+            <Entry x:Name="surname" Placeholder="Enter Surname" Completed="Handle_Completed" IsSpellCheckEnabled="True" IsTextPredictionEnabled="True"/>
+            <Entry x:Name="email" Placeholder="Enter Email" Keyboard="Email"/>
+            <Entry x:Name="password" Placeholder="Enter Password" MaxLength="7" IsPassword="True"/>
+            <Entry x:Name="phone" Placeholder="Enter Phone Number" Keyboard="Numeric"/>
+            
+            
+            <!--Textarea-->
+            <Editor BackgroundColor="Yellow" VerticalOptions="FillAndExpand"/>
+            <Button Text="Submit"/>
+
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

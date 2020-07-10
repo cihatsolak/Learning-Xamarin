@@ -1,0 +1,16 @@
+C:\Users\CihatSolak\source\repos\DataBinding\DataBinding\DataBinding\obj\Debug\netstandard2.0\DataBinding.csprojAssemblyReference.cache
+C:\Users\CihatSolak\source\repos\DataBinding\DataBinding\DataBinding\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\CihatSolak\source\repos\DataBinding\DataBinding\DataBinding\obj\Debug\netstandard2.0\DataBinding.csproj.CoreCompileInputs.cache
+C:\Users\CihatSolak\source\repos\DataBinding\DataBinding\DataBinding\obj\Debug\netstandard2.0\DataBinding.AssemblyInfoInputs.cache
+C:\Users\CihatSolak\source\repos\DataBinding\DataBinding\DataBinding\obj\Debug\netstandard2.0\DataBinding.AssemblyInfo.cs
+C:\Users\CihatSolak\source\repos\DataBinding\DataBinding\DataBinding\bin\Debug\netstandard2.0\DataBinding.deps.json
+C:\Users\CihatSolak\source\repos\DataBinding\DataBinding\DataBinding\bin\Debug\netstandard2.0\DataBinding.dll
+C:\Users\CihatSolak\source\repos\DataBinding\DataBinding\DataBinding\bin\Debug\netstandard2.0\ref\DataBinding.dll
+C:\Users\CihatSolak\source\repos\DataBinding\DataBinding\DataBinding\bin\Debug\netstandard2.0\DataBinding.pdb
+C:\Users\CihatSolak\source\repos\DataBinding\DataBinding\DataBinding\obj\Debug\netstandard2.0\DataBindings\BasicBindings.xaml.g.cs
+C:\Users\CihatSolak\source\repos\DataBinding\DataBinding\DataBinding\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\CihatSolak\source\repos\DataBinding\DataBinding\DataBinding\obj\Debug\netstandard2.0\DataBinding.dll
+C:\Users\CihatSolak\source\repos\DataBinding\DataBinding\DataBinding\obj\Debug\netstandard2.0\ref\DataBinding.dll
+C:\Users\CihatSolak\source\repos\DataBinding\DataBinding\DataBinding\obj\Debug\netstandard2.0\DataBinding.pdb
+C:\Users\CihatSolak\source\repos\DataBinding\DataBinding\DataBinding\obj\Debug\netstandard2.0\DataBindings\NotifyPropertyChanged.xaml.g.cs
+C:\Users\CihatSolak\source\repos\DataBinding\DataBinding\DataBinding\obj\Debug\netstandard2.0\DataBindings\AddContactPage.xaml.g.cs

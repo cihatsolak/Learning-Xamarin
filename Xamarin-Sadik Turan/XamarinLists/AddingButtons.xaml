@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinLists.AddingButtons">
+    <ContentPage.Content>
+        
+        <StackLayout Padding="0,40">
+
+            <ListView x:Name="listView" RowHeight="90" 
+                  GroupDisplayBinding="{Binding GroupName}" 
+                  GroupShortNameBinding="{Binding GroupShortName}"
+                  IsGroupingEnabled="True"
+                  ItemSelected="ListViewItemSelected"
+                  ItemTapped="ListViewItemTapped">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding ImageUrl}"/>
+
+                                <StackLayout>
+                                    <Label Text="{Binding Name}"/>
+                                    <Label Text="{Binding Director}" TextColor="Gray"/>
+                                </StackLayout>
+
+                                <!-- 
+                                    CommandParameter yazarak hangi filme ait butona tıklandığını belirleyeceğiz.
+                                    CommandParameter="{Binding .}" sadece nokta(.) koyarak hangi butona tıklandığını back-end'de gönderiyoruz.
+                                -->
+                                
+                                <Button Text="&#xf35a;" FontSize="30" CommandParameter="{Binding .}" TextColor="Gray" Clicked="DisplayMovieDetails"
+                                    HorizontalOptions="EndAndExpand" FontFamily="{StaticResource FontAwesomeRegular}"/>
+
+                            </StackLayout>
+                        </ViewCell>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+            <!-- Seçilen elaman hakkında detay bilgi vermek için bir label ekleyelim. -->
+            <Label x:Name="lblResult"/>
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

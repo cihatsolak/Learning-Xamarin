@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinShell.Views.Partial.AppShellHeader">
+    <ContentPage.Content>
+        <Grid HeightRequest="200">
+            <Image Aspect="Fill" Source="https://bit.ly/3ctqkwF" Opacity="0.6"/>
+            <Label Text="Filmler" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

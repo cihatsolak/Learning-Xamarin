@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HelloWorld.ProfileRelativePage" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+
+        <RelativeLayout>
+            
+            <!--
+            ConstraintExpression Type=RelativeToView, : Kime göre konumlandırıyorsun?
+                                ElementName=ProfileBanner, //Eğer bir view a göre konumlandırıyorsan hangi view?
+                                Property=Height, //Hangi özelliğine göre konumlandırıyorsun?
+                                Factor=1, //Ne kadarlık bir konumlandırma? 1 (%100) - 0 (%0) arasında bir değer.
+                                Constant=-70}"> //Geriye almak istediğin kadar, örneğin yükseklik.
+            -->
+            
+            <!--
+            ConstraintExpression : Kurallar
+            Type: Neye göre şekilleneceğim, neye göre konumlanacağım? Parent: Cihaza Göre, View: Belirtilene Göre.
+            Property: Width -> Cihazın genişliğine göre bir işlem yapıyoruz.
+            Factor=1 -> cihazın genişliğinin ne kadarını alalım? 1 demek %100'ünü alalım demek. 0.3 demek %30 demek.
+            -->
+            
+            <Image x:Name="ProfileBanner" Source="https://bit.ly/35JeVWU" Aspect="AspectFill"  Opacity="0.8" 
+                   RelativeLayout.WidthConstraint="{
+                        ConstraintExpression Type=RelativeToParent,
+                        Property=Width,
+                        Factor=1 }"
+                   RelativeLayout.HeightConstraint="{
+                        ConstraintExpression Type=RelativeToParent,
+                        Property=Height,
+                        Factor=0.3}"
+                   RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToParent,
+                        Property=Height,
+                        Factor=0,
+                        Constant=-20}"/>
+
+            <StackLayout Orientation="Horizontal" Spacing="20" 
+                         RelativeLayout.YConstraint="{
+                                ConstraintExpression Type=RelativeToView,
+                                ElementName=ProfileBanner,
+                                Property=Height,
+                                Factor=1,
+                                Constant=-70}"
+                         RelativeLayout.XConstraint="{
+                                ConstraintExpression Type=RelativeToView,
+                                ElementName=ProfileBanner,
+                                Property=Width,
+                                Factor=0.1,
+                                Constant=-10}">
+                
+                <Image Source="https://bit.ly/3fx0c5L" HeightRequest="100"/>
+                <Label Text="Cihat SOLAK" FontSize="Medium" FontAttributes="Bold" VerticalOptions="End" Margin="0,0,0,15"/>
+            </StackLayout>
+
+            <StackLayout RelativeLayout.YConstraint="{
+                                ConstraintExpression Type=RelativeToView,
+                                ElementName=ProfileBanner,
+                                Property=Height,
+                                Factor=1,
+                                Constant=60}"
+                         RelativeLayout.XConstraint="{
+                                ConstraintExpression Type=RelativeToView,
+                                ElementName=ProfileBanner,
+                                Property=Width,
+                                Factor=0.1,
+                                Constant=-20}">
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://bit.ly/2AfBvL9"/>
+                    <Label Text="Meslek" FontSize="Medium" VerticalOptions="End"/>
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://bit.ly/2AfBvL9"/>
+                    <Label Text="Nerede Yaşıyordu?" FontSize="Medium" VerticalOptions="End"/>
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://bit.ly/2AfBvL9"/>
+                    <Label Text="Nerede Okudu?" FontSize="Medium" VerticalOptions="End"/>
+                </StackLayout>
+                
+            </StackLayout>
+            
+        </RelativeLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

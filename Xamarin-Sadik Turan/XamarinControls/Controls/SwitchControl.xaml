@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinControls.Controls.SwitchControl">
+    <ContentPage.Content>
+        
+        <!-- 
+            Switch : Bir içeriği göster yada gösterme olayını biz switch ile yapabiliriz. 
+        
+            OnColor="Orange" -> Switch Rengi
+            ThumbColor="Black" -> Switch Üzerindeki butonun rengi
+        -->
+
+        <StackLayout>
+            <Switch x:Name="ToggleButton" IsToggled="True" OnColor="Orange" ThumbColor="Black"/>
+            <Label Text="{Binding Source={x:Reference ToggleButton}, Path=IsToggled}"/>
+
+            <Switch x:Name="ToggleVisibleButton" IsToggled="True" OnColor="Orange" ThumbColor="Black"/>
+            <Label Text="Xamarin" IsVisible="{Binding Source={x:Reference ToggleVisibleButton}, Path=IsToggled}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

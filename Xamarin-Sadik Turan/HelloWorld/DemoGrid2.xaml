@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HelloWorld.GridPage" NavigationPage.HasNavigationBar="False"  BackgroundColor="#faf2f2" Padding="20">
+
+    <ScrollView>
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.ColumnSpan="2" Text="Akıllı Saatler" TextColor="#fe98010" HorizontalOptions="Center" FontSize="30"/>
+
+            <StackLayout BackgroundColor="White" Padding="10,15" Grid.Row="1" Grid.Column="0">
+                <Image Source="https://bit.ly/2LeSXSg" HeightRequest="100"/>
+            </StackLayout>
+
+            <!--1-->
+            <StackLayout BackgroundColor="White" Padding="10,15" Grid.Row="1" Grid.Column="0">
+                <Image Source="https://bit.ly/2LeSXSg" HeightRequest="100"/>
+                <Label Text="Apple Watch Seri 4 Nikes" FontSize="18" FontAttributes="Bold"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="2999 TL" TextColor="#fe9801" FontSize="18" FontAttributes="Bold"/>
+                    <Label Text="3499 TL" TextColor="#5d5b6a" TextDecorations="Strikethrough"/>
+                </StackLayout>
+                <BoxView HeightRequest="1" BackgroundColor="#f1f1f1"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://img.icons8.com/color/96/000000/filled-like.png" HorizontalOptions="StartAndExpand" />
+                    <Image Source="https://img.icons8.com/dusk/64/000000/shopping-cart-loaded.png" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+
+            </StackLayout>
+
+            <!--2-->
+            <StackLayout BackgroundColor="White" Padding="10,15" Grid.Row="1" Grid.Column="1">
+                <Image Source="https://bit.ly/2LeSXSg" HeightRequest="100"/>
+                <Label Text="Apple Watch Seri 4 Nikes" FontSize="18" FontAttributes="Bold"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="2999 TL" TextColor="#fe9801" FontSize="18" FontAttributes="Bold"/>
+                    <Label Text="3499 TL" TextColor="#5d5b6a" TextDecorations="Strikethrough"/>
+                </StackLayout>
+                <BoxView HeightRequest="1" BackgroundColor="#f1f1f1"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://img.icons8.com/color/96/000000/filled-like.png" HorizontalOptions="StartAndExpand" />
+                    <Image Source="https://img.icons8.com/dusk/64/000000/shopping-cart-loaded.png" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+
+            </StackLayout>
+
+            <!--3-->
+            <StackLayout BackgroundColor="White" Padding="10,15" Grid.Row="1" Grid.Column="2">
+                <Image Source="https://bit.ly/2LeSXSg" HeightRequest="100"/>
+                <Label Text="Apple Watch Seri 4 Nikes" FontSize="18" FontAttributes="Bold"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="2999 TL" TextColor="#fe9801" FontSize="18" FontAttributes="Bold"/>
+                    <Label Text="3499 TL" TextColor="#5d5b6a" TextDecorations="Strikethrough"/>
+                </StackLayout>
+                <BoxView HeightRequest="1" BackgroundColor="#f1f1f1"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://img.icons8.com/color/96/000000/filled-like.png" HorizontalOptions="StartAndExpand" />
+                    <Image Source="https://img.icons8.com/dusk/64/000000/shopping-cart-loaded.png" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+
+            </StackLayout>
+
+            <!--4-->
+            <StackLayout BackgroundColor="White" Padding="10,15" Grid.Row="2" Grid.Column="0">
+                <Image Source="https://bit.ly/2LeSXSg" HeightRequest="100"/>
+                <Label Text="Apple Watch Seri 4 Nikes" FontSize="18" FontAttributes="Bold"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="2999 TL" TextColor="#fe9801" FontSize="18" FontAttributes="Bold"/>
+                    <Label Text="3499 TL" TextColor="#5d5b6a" TextDecorations="Strikethrough"/>
+                </StackLayout>
+                <BoxView HeightRequest="1" BackgroundColor="#f1f1f1"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://img.icons8.com/color/96/000000/filled-like.png" HorizontalOptions="StartAndExpand" />
+                    <Image Source="https://img.icons8.com/dusk/64/000000/shopping-cart-loaded.png" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+
+            </StackLayout>
+
+            <!--5-->
+            <StackLayout BackgroundColor="White" Padding="10,15" Grid.Row="2" Grid.Column="1">
+                <Image Source="https://bit.ly/2LeSXSg" HeightRequest="100"/>
+                <Label Text="Apple Watch Seri 4 Nikes" FontSize="18" FontAttributes="Bold"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="2999 TL" TextColor="#fe9801" FontSize="18" FontAttributes="Bold"/>
+                    <Label Text="3499 TL" TextColor="#5d5b6a" TextDecorations="Strikethrough"/>
+                </StackLayout>
+                <BoxView HeightRequest="1" BackgroundColor="#f1f1f1"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://img.icons8.com/color/96/000000/filled-like.png" HorizontalOptions="StartAndExpand" />
+                    <Image Source="https://img.icons8.com/dusk/64/000000/shopping-cart-loaded.png" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+
+            </StackLayout>
+
+            <!--6-->
+            <StackLayout BackgroundColor="White" Padding="10,15" Grid.Row="2" Grid.Column="2">
+                <Image Source="https://bit.ly/2LeSXSg" HeightRequest="100"/>
+                <Label Text="Apple Watch Seri 4 Nikes" FontSize="18" FontAttributes="Bold"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="2999 TL" TextColor="#fe9801" FontSize="18" FontAttributes="Bold"/>
+                    <Label Text="3499 TL" TextColor="#5d5b6a" TextDecorations="Strikethrough"/>
+                </StackLayout>
+                <BoxView HeightRequest="1" BackgroundColor="#f1f1f1"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://img.icons8.com/color/96/000000/filled-like.png" HorizontalOptions="StartAndExpand" />
+                    <Image Source="https://img.icons8.com/dusk/64/000000/shopping-cart-loaded.png" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+
+            </StackLayout>
+
+            <!--7-->
+            <StackLayout BackgroundColor="White" Padding="10,15" Grid.Row="3" Grid.Column="0">
+                <Image Source="https://bit.ly/2LeSXSg" HeightRequest="100"/>
+                <Label Text="Apple Watch Seri 4 Nikes" FontSize="18" FontAttributes="Bold"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="2999 TL" TextColor="#fe9801" FontSize="18" FontAttributes="Bold"/>
+                    <Label Text="3499 TL" TextColor="#5d5b6a" TextDecorations="Strikethrough"/>
+                </StackLayout>
+                <BoxView HeightRequest="1" BackgroundColor="#f1f1f1"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://img.icons8.com/color/96/000000/filled-like.png" HorizontalOptions="StartAndExpand" />
+                    <Image Source="https://img.icons8.com/dusk/64/000000/shopping-cart-loaded.png" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+
+            </StackLayout>
+
+            <!--8-->
+            <StackLayout BackgroundColor="White" Padding="10,15" Grid.Row="3" Grid.Column="1">
+                <Image Source="https://bit.ly/2LeSXSg" HeightRequest="100"/>
+                <Label Text="Apple Watch Seri 4 Nikes" FontSize="18" FontAttributes="Bold"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="2999 TL" TextColor="#fe9801" FontSize="18" FontAttributes="Bold"/>
+                    <Label Text="3499 TL" TextColor="#5d5b6a" TextDecorations="Strikethrough"/>
+                </StackLayout>
+                <BoxView HeightRequest="1" BackgroundColor="#f1f1f1"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://img.icons8.com/color/96/000000/filled-like.png" HorizontalOptions="StartAndExpand" />
+                    <Image Source="https://img.icons8.com/dusk/64/000000/shopping-cart-loaded.png" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+
+            </StackLayout>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

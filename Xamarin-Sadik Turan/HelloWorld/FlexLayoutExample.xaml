@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HelloWorld.FlexLayoutExample">
+   
+    <ContentPage.Content>
+
+        <!--
+        Direction : Yönlendirme. Satır, Sütun, Tersten Satır ya da Sütun gibi.
+        JustifyContent="Center" : Yatayda ortala. Y Ekseni
+        AlignItems="Center" : Dikeyde ortala. X Ekseni
+        -->
+
+        <FlexLayout Direction="Row" 
+                    JustifyContent="Center" 
+                    AlignItems="Center">
+            
+            <BoxView Color="Red" FlexLayout.AlignSelf="Start"/>
+            <BoxView Color="Green" FlexLayout.AlignSelf="End"/>
+            <BoxView Color="Blue" FlexLayout.AlignSelf="Stretch"/>
+        </FlexLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

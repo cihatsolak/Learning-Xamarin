@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinMvvm.Views.MainPage"
+             xmlns:views="clr-namespace:XamarinMvvm.Views">
+
+    <ContentPage.Content>
+
+        <!--
+             Command="{Binding NavigateCommand}" : Komutun Adı
+             CommandParameter="{x:Type views:MovieList}" : Gönderilecek değer.
+        -->
+        
+        <TableView Intent="Menu">
+            <TableRoot>
+                <TableSection Title="Menu">
+                    
+                    <TextCell Text="Movie List" Detail="Text" 
+                              Command="{Binding NavigateCommand}" 
+                              CommandParameter="{x:Type views:MovieList}"/>
+                    
+                    <TextCell Text="Single Selection Page" Detail="Text" 
+                              Command="{Binding NavigateCommand}" 
+                              CommandParameter="{x:Type views:SingleSelectionPage}"/>
+
+                    <TextCell Text="Multiple selection Page" Detail="Text"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type views:MultipleSelectionPage}"/>
+
+                    <TextCell Text="Single Pre Selection" Detail="Text"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type views:MultipleSelectionPage}"/>
+
+                    <TextCell Text="Multiple Pre Selection" Detail="Text"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type views:MultipleSelectionPage}"/>
+
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+    </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinLists.ObservableCollectionData">
+    <ContentPage.Content>
+        <!--
+            Hazırlamış olduğumuz liste üzerinde bir değişiklik yaptığımızda
+            listediki bu değişiklikleri nasıl aktaracağız?
+        
+            Observable Collection ile liste üzerinde yaptıgımız herhangi bir değişiklikte
+            model üzerine aktarılıyor.
+        -->
+        <StackLayout>
+            <ListView x:Name="listView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell Text="{Binding Name}" Detail="{Binding Director}" 
+                                   ImageSource="{Binding ImageUrl}" TextColor="Red" DetailColor="Gray"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Label x:Name="lblCount"/>
+            <Button Text="Yeni Film Ekle" Clicked="Handle_Add_Movie"/>
+            <Button Text="Film Sil" Clicked="Handle_RemoveMovie"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinControls.Controls.TableViewControl">
+
+    <ContentPage.Content>
+
+        <!-- 
+        Intent : Hangi amaçla bu table view'i oluşturduk? 
+        TextCell, EntryCell, SwitchCell bizim amacımıza yetmiyorsa, ViewCell oluşturabiliriz.
+        
+        EndAndExpend: Kendini sona al diğer elemanı sola ittir.
+        -->
+        
+        <TableView Intent="Form">
+            <TableRoot>
+                
+                <!-- Section One -->
+                <TableSection Title="Contact">
+                    
+                    <TextCell Text="Email" Detail="info@gmail.com"/>
+                    
+                    <EntryCell Label="Phone" Placeholder="(532) 222 22-22"/>
+                    
+                    <SwitchCell Text="Notifications" On="True"/>
+
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="15,0">
+                            <Label Text="Start" VerticalOptions="Center"/>
+                            <DatePicker Date="5/5/2019" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                    </ViewCell>
+                    
+                </TableSection>
+
+                <!-- Section Two -->
+                <TableSection Title="Setting">
+
+                    <TextCell Text="Email" Detail="info@gmail.com"/>
+
+                    <EntryCell Label="Phone" Placeholder="(532) 222 22-22"/>
+
+                    <SwitchCell Text="Notifications" On="True"/>
+
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="15,0">
+                            <Label Text="Start" VerticalOptions="Center"/>
+                            <DatePicker Date="5/5/2019" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                    </ViewCell>
+
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+        
+        
+    </ContentPage.Content>
+
+</ContentPage>

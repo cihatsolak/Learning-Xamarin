@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            mc:Ignorable="d"
+            x:Class="XamarinNavigations.Navigations.TabbedPageMenu"
+            xmlns:local="clr-namespace:XamarinNavigations.Navigations;assembly=XamarinNavigations">
+
+    <TabbedPage.Children>
+
+        <!-- 
+              Kendimiz bir contet page oluşturduk ve bu content page'i tabbed page'e dahil edebiliriz.
+              Bu işlemi yapmadan önce namespace'e;
+              
+              xmlns:local="clr-namespace:XamarinNavigations.Navigations;assembly=XamarinNavigations" 
+              
+              eklemek istedğimiz sayfanın namespace'ini ekleyebiliriz ve assembly kısmında eger page 
+              farklı sayfada ise assembly adını belirtircez.
+        -->
+        <local:FirstPage Title="First Page" IconImageSource="https://img.icons8.com/pastel-glyph/64/000000/first-place-ribbon.png"/>
+
+        <!-- Sayfalar referans veya satır içi olarak eklenebilir -->
+        <ContentPage Title="Anasayfa" IconImageSource="https://img.icons8.com/ios/50/000000/home.png">
+            <Label Text="Page 1"/>
+        </ContentPage>
+
+        <ContentPage Title="Keşfet" IconImageSource="https://img.icons8.com/ios/50/000000/alarm.png">
+            <Label Text="Page 2"/>
+        </ContentPage>
+
+        <ContentPage Title="Gönderi" IconImageSource="https://img.icons8.com/ios/50/000000/plus.png" >
+            <Label Text="Page 3"/>
+        </ContentPage>
+
+        <ContentPage Title="Profil" IconImageSource="https://img.icons8.com/android/24/000000/user.png" >
+            <Label Text="Page 3"/>
+        </ContentPage>
+        
+        <!-- Yukarıdaki tablar sadece birer content page içeriyor. Yani sadece bir sayfa. 
+             Biz tabbed page'ler arasında da bir gezinti halinde olmak istiyorsak tabbed page
+             navigation page ekleyeceğiz. -->
+
+        <NavigationPage>
+            
+            <x:Arguments>
+                <local:FirstPage Title="First Page" IconImageSource="https://img.icons8.com/pastel-glyph/64/000000/first-place-ribbon.png"/>
+            </x:Arguments>
+            
+        </NavigationPage>
+
+    </TabbedPage.Children>
+    
+</TabbedPage>

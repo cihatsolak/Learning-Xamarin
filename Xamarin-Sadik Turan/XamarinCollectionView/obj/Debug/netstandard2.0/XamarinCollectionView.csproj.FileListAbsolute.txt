@@ -1,0 +1,15 @@
+C:\Users\CihatSolak\source\repos\XamarinCollectionView\XamarinCollectionView\XamarinCollectionView\obj\Debug\netstandard2.0\XamarinCollectionView.csprojAssemblyReference.cache
+C:\Users\CihatSolak\source\repos\XamarinCollectionView\XamarinCollectionView\XamarinCollectionView\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\CihatSolak\source\repos\XamarinCollectionView\XamarinCollectionView\XamarinCollectionView\obj\Debug\netstandard2.0\CollectionViews\SimpleCollectionView.xaml.g.cs
+C:\Users\CihatSolak\source\repos\XamarinCollectionView\XamarinCollectionView\XamarinCollectionView\obj\Debug\netstandard2.0\XamarinCollectionView.csproj.CoreCompileInputs.cache
+C:\Users\CihatSolak\source\repos\XamarinCollectionView\XamarinCollectionView\XamarinCollectionView\obj\Debug\netstandard2.0\XamarinCollectionView.AssemblyInfoInputs.cache
+C:\Users\CihatSolak\source\repos\XamarinCollectionView\XamarinCollectionView\XamarinCollectionView\obj\Debug\netstandard2.0\XamarinCollectionView.AssemblyInfo.cs
+C:\Users\CihatSolak\source\repos\XamarinCollectionView\XamarinCollectionView\XamarinCollectionView\obj\Debug\netstandard2.0\XamarinCollectionView.dll
+C:\Users\CihatSolak\source\repos\XamarinCollectionView\XamarinCollectionView\XamarinCollectionView\obj\Debug\netstandard2.0\ref\XamarinCollectionView.dll
+C:\Users\CihatSolak\source\repos\XamarinCollectionView\XamarinCollectionView\XamarinCollectionView\obj\Debug\netstandard2.0\XamarinCollectionView.pdb
+C:\Users\CihatSolak\source\repos\XamarinCollectionView\XamarinCollectionView\XamarinCollectionView\bin\Debug\netstandard2.0\XamarinCollectionView.deps.json
+C:\Users\CihatSolak\source\repos\XamarinCollectionView\XamarinCollectionView\XamarinCollectionView\bin\Debug\netstandard2.0\XamarinCollectionView.dll
+C:\Users\CihatSolak\source\repos\XamarinCollectionView\XamarinCollectionView\XamarinCollectionView\bin\Debug\netstandard2.0\ref\XamarinCollectionView.dll
+C:\Users\CihatSolak\source\repos\XamarinCollectionView\XamarinCollectionView\XamarinCollectionView\bin\Debug\netstandard2.0\XamarinCollectionView.pdb
+C:\Users\CihatSolak\source\repos\XamarinCollectionView\XamarinCollectionView\XamarinCollectionView\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\CihatSolak\source\repos\XamarinCollectionView\XamarinCollectionView\XamarinCollectionView\obj\Debug\netstandard2.0\CollectionViews\DataBindingCollectionView.xaml.g.cs

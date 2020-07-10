@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HelloWorld.BlogPage" NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Photo Gallery" Margin="20" FontAttributes="Bold" FontSize="Large"></Label>
+                <Image Source="https://bit.ly/3bhyIxV" Aspect="AspectFill" HeightRequest="300"></Image>
+
+                <StackLayout Orientation="Horizontal" Spacing="20" Padding="15,0" Margin="0,20,0,0">
+                    <Label Text="Like"/>
+                    <Label Text="Comment"/>
+                    <Label Text="Share"/>
+                </StackLayout>
+
+                <StackLayout Padding="10" Spacing="20">
+                    <BoxView HeightRequest="2" BackgroundColor="#f0f0f0" />
+                    <Label Text="150 Likes" FontAttributes="Bold" FontSize="Medium"/>
+                    <Label TextColor="#666" FontSize="Medium" Text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."/>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

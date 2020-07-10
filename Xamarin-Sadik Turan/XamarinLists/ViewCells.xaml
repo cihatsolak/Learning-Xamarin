@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinLists.ViewCells">
+    <ContentPage.Content>
+        
+        <!--
+        HasUnevenRows="True" : Her satır aynı yükseklikte olmasın, içerik ne kadarsa o kadar yer kaplasın.
+        -->
+        
+        <ListView x:Name="movieList" Header="Film Listesi" RowHeight="90" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="4">
+                            <Image Source="{Binding ImageUrl}"/>
+                            <StackLayout>
+                                <Label Text="{Binding Name}"/>
+                                <Label Text="{Binding Director}" TextColor="Gray"/>
+                                <Button Text="&#xf0f3;" FontSize="20" FontFamily="{StaticResource FontAwesomeRegular}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                    
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+    </ContentPage.Content>
+</ContentPage>

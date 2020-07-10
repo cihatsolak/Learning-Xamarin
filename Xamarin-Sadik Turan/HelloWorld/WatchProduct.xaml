@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HelloWorld.WatchProduct" NavigationPage.HasNavigationBar="False">
+
+    <!--AbsoluteLayout.LayoutBounds="X,Y,Width,Height"-->
+    <!-- 1: %100 demek 0.5: %50 demek. -->
+    <!--
+        None:  1-0 arasında bir değer verilmez. Düz değer verilecek.
+        PositionProportional: Pozisyon için 1 ile 0 arasında değer verilebilir.
+        WidthProportional:  Genişlik için 1 ile 0 arasında değer verilebilir.
+        HeightProportional:  Yükseklik için 1 ile 0 arasında değer verilebilir.
+        XProportional: Sadece x için geçerli bir 1-0 arasında değer verilir.
+        YProportional: Sadece y için geçerli bir 1-0 arasında değer verilir.
+    -->
+    
+    <AbsoluteLayout>
+        
+        <Image Source="https://i.hizliresim.com/pXlHlJ.jpg" 
+               Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0,0,1,0.8" AbsoluteLayout.LayoutFlags="All"/>
+
+        <BoxView Color="White" CornerRadius="40" 
+                 AbsoluteLayout.LayoutBounds="0,0.9,1,200" 
+                 AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+
+        <StackLayout AbsoluteLayout.LayoutBounds="0,0.9,1,200" 
+                     AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
+                     Padding="40" HorizontalOptions="Center" VerticalOptions="Center" Spacing="5">
+
+            <Label Text="Samsung R830 Galaxy Watch" FontSize="21" FontAttributes="Bold"/>
+            <Label Text="Akıllı saat bir bilgisayar sistemi ile entegre edilmiş kol saatidir. Akıllı saat şu aşamada giyilebilir teknoloji ürünlerinin en iyisi olarak bilinmektedir."/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="2099 TL" TextColor="#fe9801" FontAttributes="Bold" FontSize="22"/>
+                <Label Text="3599 TL" TextColor="#5d4b6a" FontAttributes="Bold" FontSize="16" TextDecorations="Strikethrough"/>
+            </StackLayout>
+            <Button Text="Add to Cart" BackgroundColor="#16817a" TextColor="White" FontAttributes="Bold"/>
+        </StackLayout>
+
+    </AbsoluteLayout>
+</ContentPage>

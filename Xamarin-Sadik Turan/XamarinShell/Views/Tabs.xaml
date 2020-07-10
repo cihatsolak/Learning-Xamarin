@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinShell.Views.Tabs"
+             xmlns:navigation="clr-namespace:XamarinShell.Views.TabPages">
+
+    <TabBar>
+        <Tab Title="Komedi Tab">
+            <!-- Performanslı yazımı -->
+            <ShellContent Title="Shell Komedi 1" ContentTemplate="{DataTemplate navigation:FirstPage}"></ShellContent>
+            <ShellContent Title="Shell Komedi 1" ContentTemplate="{DataTemplate navigation:SecondPage}"></ShellContent>
+        </Tab>
+        <Tab Title="Macera Tab">
+            <ShellContent>
+                <ContentPage>
+                    <Label Text="Macera Filmleri" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Belgesel Tab">
+            <ShellContent>
+                <ContentPage>
+                    <Label Text="Belgesel Filmleri" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Drama Tab">
+            <ShellContent>
+                <ContentPage>
+                    <Label Text="Drama Filmleri" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+    </TabBar>
+    
+</Shell>

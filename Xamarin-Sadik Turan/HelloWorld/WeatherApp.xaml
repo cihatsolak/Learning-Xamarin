@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HelloWorld.WeatherApp" NavigationPage.HasNavigationBar="False">
+
+    <!--AbsoluteLayout.LayoutBounds="X,Y,Width,Height"-->
+    <!-- 1: %100 demek 0.5: %50 demek. -->
+    <!--
+        None:  1-0 arasında bir değer verilmez. Düz değer verilecek.
+        PositionProportional: Pozisyon için 1 ile 0 arasında değer verilebilir.
+        WidthProportional:  Genişlik için 1 ile 0 arasında değer verilebilir.
+        HeightProportional:  Yükseklik için 1 ile 0 arasında değer verilebilir.
+        XProportional: Sadece x için geçerli bir 1-0 arasında değer verilir.
+        YProportional: Sadece y için geçerli bir 1-0 arasında değer verilir.
+    -->
+
+    <AbsoluteLayout>
+        <Image Source="https://bit.ly/2LbnDUq" Aspect="AspectFill" AbsoluteLayout.LayoutFlags="All"  AbsoluteLayout.LayoutBounds="0,0,1,1"/>
+
+        <StackLayout AbsoluteLayout.LayoutBounds="0,0.25,1,0.5" AbsoluteLayout.LayoutFlags="All" Spacing="10">
+            <Image Source="https://bit.ly/3fCcbyS" WidthRequest="130"/>
+            <Label TextColor="White" FontSize="45" Text="İstanbul" HorizontalOptions="Center"/>
+            <Label TextColor="White" FontSize="35" Text="15°" HorizontalOptions="Center"/>
+        </StackLayout>
+
+        <BoxView Color="#125497" Opacity="0.4"
+                 AbsoluteLayout.LayoutBounds="0,1,1,75" 
+                 AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+
+        <StackLayout Orientation="Horizontal" 
+                     HorizontalOptions="Center" 
+                     AbsoluteLayout.LayoutBounds="0,1.040,1,75" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" Spacing="75">
+
+            <Label Text="Sıcaklık" TextColor="#ececec" FontAttributes="Bold" FontSize="Medium"/>
+            <Label Text="Rüzgar" TextColor="#ececec" FontAttributes="Bold" FontSize="Medium"/>
+            <Label Text="Nem" TextColor="#ececec" FontAttributes="Bold" FontSize="Medium"/>
+        </StackLayout>
+        
+    </AbsoluteLayout>
+    
+</ContentPage>

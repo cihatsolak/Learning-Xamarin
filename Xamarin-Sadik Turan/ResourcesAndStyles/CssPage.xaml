@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ResourcesAndStyles.CssPage">
+
+    <ContentPage.Resources>
+        <!-- css sayfasını tanımlama -->
+        <StyleSheet Source="Styles/style.css"></StyleSheet>
+        
+        <StyleSheet>
+            <!-- Sayfaya özel css yazma -->
+           <![CDATA[
+               
+            ]]>
+        </StyleSheet>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout StyleClass="header">
+            <Label Text="Css in Xamarin Forms"/>
+            <Image Source="https://bit.ly/3dDhEnD"/>
+            <Entry />
+            <Button Text="Submit" StyleId="btnSubmit"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinControls.Controls.CheckboxControl">
+    <ContentPage.Content>
+       
+        <!--
+        Spacing'e eksi (-) bir değer verirsem, daha da yakınlaşır.
+        CheckedChanged = "CheckBox' a tıklandı mı? Tıklanmadı mı?"
+        
+        <Label Text="{Binding Source={x:Reference CheckboxSpor}, Path=IsChecked}"/>
+        
+        Binding Source -> nerden alacağız x:Reference gösteriyoruz. Path ile de hangi bilgisini alacağımızı söylüyıruz.
+        -->
+
+        <StackLayout Padding="25">
+            <Label x:Name="CheckedResult"/>
+
+            <!-- Event ile -->
+            <StackLayout Orientation="Horizontal" Spacing="-2" BackgroundColor="#f0f0f0">
+                <CheckBox IsChecked="True" CheckedChanged="CheckBox_CheckedChanged"/>
+                <Label Text="Sinema" VerticalOptions="Center"/>
+            </StackLayout>
+
+            <!-- Bind ile -->
+            <StackLayout Orientation="Horizontal" Spacing="-2" BackgroundColor="#f0f0f0">
+                <CheckBox x:Name="CheckboxSpor"/>
+                <Label Text="Spor" VerticalOptions="Center"/>
+                <Label Text="{Binding Source={x:Reference CheckboxSpor}, Path=IsChecked}"/>
+            </StackLayout>
+            
+        </StackLayout>
+
+
+    </ContentPage.Content>
+</ContentPage>

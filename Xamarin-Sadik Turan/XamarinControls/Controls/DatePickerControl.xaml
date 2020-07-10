@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinControls.Controls.DatePickerControl">
+    <ContentPage.Content>
+        
+        <StackLayout Padding="40">
+
+            <Label Text="Start Date: "/>
+            <DatePicker x:Name="startDate" DateSelected="Handle_Date"/>
+
+            <Label Text="End Date: "/>
+            <DatePicker x:Name="endDate" MinimumDate="{Binding Source={x:Reference startDate}, Path=Date}" DateSelected="Handle_Date"/>
+
+            <Label x:Name="lblResult"/>
+
+            <!--<DatePicker MinimumDate="01/01/2000" MaximumDate="01/01/2020" Date="01/01/2012"/>-->
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

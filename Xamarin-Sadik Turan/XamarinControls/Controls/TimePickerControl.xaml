@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinControls.Controls.TimePickerControl">
+    
+    <ContentPage.Content>
+        
+        <!--
+        T (büyük T): Saat, Dakika, Saniye
+        t (küçük t): Saat, dakika
+        hh: Sadece saat seçtirir.
+        mm: sadece dakika seçtirir.
+        ss: sadece saniye seçtirir.
+        
+        Handle_Changed: Değer değiştidiğinde, tetiklendiğinde.
+        -->
+        
+        <StackLayout Padding="40">
+
+            <Entry x:Name="_entry" Placeholder="Enter Comment"/>
+
+            <TimePicker x:Name="timePicker" Format="T" Time="11:00:00" PropertyChanged="Handle_Changed"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Enable" VerticalOptions="Center"/>
+                <Switch x:Name="_switch" HorizontalOptions="EndAndExpand" Toggled="Handle_Switch"/>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

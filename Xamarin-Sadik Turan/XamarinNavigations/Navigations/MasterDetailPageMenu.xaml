@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinNavigations.Navigations.MasterDetailPageMenu"
+             xmlns:pages="clr-namespace:XamarinNavigations.Navigations" NavigationPage.HasNavigationBar="False">
+
+    <!-- 
+        Master Detail Page: Aynı sayfa içerisinde  2 adet content page gösteriyor olmamızdır.
+        Buraya gelecek xaml sayfalarını ayrı sayfalarad oluşturup buraya da aktarabiliriz.
+        Direk buraya içeriklerimizi yazabiliriz.
+    -->
+
+    <!-- 
+        Sol Taraftaki Menüler
+        SeparatorVisibility="None" :: Menü altındaki çizgiler görünsün ya da görünmesin.
+    -->
+    <MasterDetailPage.Master>
+
+        <ContentPage Title="Menu" IconImageSource="https://img.icons8.com/ios/50/000000/menu.png">
+
+            <ListView x:Name="listView" ItemSelected="Handle_Selected" BackgroundColor="#e8e8e8" SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ViewCell>
+                            <Grid Padding="5,10">
+                                <Grid.ColumnDefinitions>
+                                    <!-- İlk kolon 30px, diğer kolon kalanı(*) kaplasın -->
+                                    <ColumnDefinition Width="30"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="{Binding Icon}"/>
+                                <Label Grid.Column="1" Text="{Binding Title}"/>
+                            </Grid>
+                        </ViewCell>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </ContentPage>
+
+    </MasterDetailPage.Master>
+
+    <!-- Detay Kısmı -->
+    <MasterDetailPage.Detail>
+        
+        <NavigationPage>
+            
+        </NavigationPage>
+        
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ResourcesAndStyles.StaticResources">
+
+    <!-- Override Edilmiş. 
+         App.xaml içerisindeki tanmlamayı ezerek 
+         sadece bu sayfaya özel butonun rengini ayarlıyoruz.-->
+    
+    <ContentPage.Resources>
+        <Color x:Key="BtnSubmitBgColor">Yellow</Color>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+
+        <Grid Padding="20,40" BackgroundColor="{StaticResource Key=PageBgColor}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Entry x:Name="Subject"  Grid.Row="0"/>
+
+            <StackLayout  Grid.Row="1" Padding="1" BackgroundColor="Silver">
+                <Editor x:Name="editor" VerticalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2">
+                <Button Text="Cancel" BackgroundColor="{StaticResource Key=BtnCancelBgColor}" 
+                        TextColor="{StaticResource Key=BtnTextColor}" FontAttributes="{StaticResource Key=BtnFontStyle}"/>
+                <Button Text="Submit" BackgroundColor="{StaticResource Key=BtnSubmitBgColor}" 
+                        TextColor="{StaticResource Key=BtnTextColor}" FontAttributes="{StaticResource Key=BtnFontStyle}"/>
+            </StackLayout>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

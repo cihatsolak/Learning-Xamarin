@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinShell.Views.AppShell" FlyoutBehavior="Flyout"
+       
+             xmlns:header="clr-namespace:XamarinShell.Views.Partial">
+
+    <!--Shell'i yukarıdaki şekilde özelliştirebiliriz.-->
+    <Shell.Resources>
+        <Style x:Key="BaseStyle" TargetType="Element">
+            <Setter Property="Shell.BackgroundColor" Value="#6b5b95"/>
+            <Setter Property="Shell.TitleColor" Value="White"/>
+            <Setter Property="Shell.ForegroundColor" Value="White"/>
+            <Setter Property="Shell.DisabledColor" Value="#feb236"/>
+            <Setter Property="Shell.UnselectedColor" Value="#d64161"/>
+        </Style>
+    </Shell.Resources>
+    
+    <Shell.FlyoutHeader>
+         <!--Farklı sayfadan header'ı çekme. Partial view gibi düşünebiliriz. namespace eklemeyi unutma.--> 
+        <header:AppShellHeader/>
+    </Shell.FlyoutHeader>   
+    
+    <FlyoutItem Title="Filmler" Icon="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png" FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Yabancı" Icon="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png">
+            <ShellContent Title="Macera">
+                <ContentPage>
+                    <Label Text="Macera Filmleri" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+                </ContentPage>
+            </ShellContent>
+            <ShellContent Title="Yarış Filmleri" Icon="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png">
+                <ContentPage>
+                    <Label Text="Macera Filmleri" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Yerli">
+            <ShellContent Title="Macera">
+                <ContentPage>
+                    <Label Text="Macera Filmleri" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+                </ContentPage>
+            </ShellContent>
+            <ShellContent Title="Yarış Filmleri">
+                <ContentPage>
+                    <Label Text="Macera Filmleri" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Filmler" Icon="https://img.icons8.com/bubbles/50/000000/tv.png">
+        <ShellContent Title="Macera">
+            <ContentPage>
+                <Label Text="Macera Filmleri" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+
+    <!-- Flyoıut Item tag'ini koymasak da otomatik olarak shellcontent tag'i konur. -->
+    <ShellContent Title="Diziler">
+        <ContentPage>
+            <Label Text="Korku Dizileri" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"/>
+        </ContentPage>
+    </ShellContent>
+
+    <!--<MenuItem Text="About" Clicked="Handle_About" CommandParameter="url"></MenuItem>-->
+    
+</Shell>

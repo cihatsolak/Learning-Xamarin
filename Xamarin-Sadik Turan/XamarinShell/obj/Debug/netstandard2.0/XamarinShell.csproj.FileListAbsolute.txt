@@ -1,0 +1,36 @@
+C:\Users\CihatSolak\source\repos\XamarinShell\XamarinShell\XamarinShell\bin\Debug\netstandard2.0\XamarinShell.deps.json
+C:\Users\CihatSolak\source\repos\XamarinShell\XamarinShell\XamarinShell\bin\Debug\netstandard2.0\XamarinShell.dll
+C:\Users\CihatSolak\source\repos\XamarinShell\XamarinShell\XamarinShell\bin\Debug\netstandard2.0\ref\XamarinShell.dll
+C:\Users\CihatSolak\source\repos\XamarinShell\XamarinShell\XamarinShell\bin\Debug\netstandard2.0\XamarinShell.pdb
+C:\Users\CihatSolak\source\repos\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\XamarinShell.csprojAssemblyReference.cache
+C:\Users\CihatSolak\source\repos\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\CihatSolak\source\repos\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\XamarinShell.csproj.CoreCompileInputs.cache
+C:\Users\CihatSolak\source\repos\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\XamarinShell.AssemblyInfoInputs.cache
+C:\Users\CihatSolak\source\repos\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\XamarinShell.AssemblyInfo.cs
+C:\Users\CihatSolak\source\repos\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\CihatSolak\source\repos\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\XamarinShell.dll
+C:\Users\CihatSolak\source\repos\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\ref\XamarinShell.dll
+C:\Users\CihatSolak\source\repos\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\XamarinShell.pdb
+C:\Users\CihatSolak\source\repos\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\Views\AppShell.xaml.g.cs
+C:\Users\CihatSolak\source\repos\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\Views\Partial\AppShellHeader.xaml.g.cs
+C:\Users\CihatSolak\source\repos\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\Views\Tabs.xaml.g.cs
+C:\Users\CihatSolak\source\repos\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\Views\TabPages\FirstPage.xaml.g.cs
+C:\Users\CihatSolak\source\repos\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\Views\TabPages\SecondPage.xaml.g.cs
+C:\Users\CihatSolak\Desktop\Yeni klasör\Mobile-Application-Course-Android-and-IOS-Development-with-Xamarin\Bölüm 10-11-12\XamarinShell\XamarinShell\XamarinShell\bin\Debug\netstandard2.0\XamarinShell.deps.json
+C:\Users\CihatSolak\Desktop\Yeni klasör\Mobile-Application-Course-Android-and-IOS-Development-with-Xamarin\Bölüm 10-11-12\XamarinShell\XamarinShell\XamarinShell\bin\Debug\netstandard2.0\XamarinShell.dll
+C:\Users\CihatSolak\Desktop\Yeni klasör\Mobile-Application-Course-Android-and-IOS-Development-with-Xamarin\Bölüm 10-11-12\XamarinShell\XamarinShell\XamarinShell\bin\Debug\netstandard2.0\ref\XamarinShell.dll
+C:\Users\CihatSolak\Desktop\Yeni klasör\Mobile-Application-Course-Android-and-IOS-Development-with-Xamarin\Bölüm 10-11-12\XamarinShell\XamarinShell\XamarinShell\bin\Debug\netstandard2.0\XamarinShell.pdb
+C:\Users\CihatSolak\Desktop\Yeni klasör\Mobile-Application-Course-Android-and-IOS-Development-with-Xamarin\Bölüm 10-11-12\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\XamarinShell.csprojAssemblyReference.cache
+C:\Users\CihatSolak\Desktop\Yeni klasör\Mobile-Application-Course-Android-and-IOS-Development-with-Xamarin\Bölüm 10-11-12\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\CihatSolak\Desktop\Yeni klasör\Mobile-Application-Course-Android-and-IOS-Development-with-Xamarin\Bölüm 10-11-12\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\Views\AppShell.xaml.g.cs
+C:\Users\CihatSolak\Desktop\Yeni klasör\Mobile-Application-Course-Android-and-IOS-Development-with-Xamarin\Bölüm 10-11-12\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\Views\Partial\AppShellHeader.xaml.g.cs
+C:\Users\CihatSolak\Desktop\Yeni klasör\Mobile-Application-Course-Android-and-IOS-Development-with-Xamarin\Bölüm 10-11-12\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\Views\TabPages\FirstPage.xaml.g.cs
+C:\Users\CihatSolak\Desktop\Yeni klasör\Mobile-Application-Course-Android-and-IOS-Development-with-Xamarin\Bölüm 10-11-12\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\Views\TabPages\SecondPage.xaml.g.cs
+C:\Users\CihatSolak\Desktop\Yeni klasör\Mobile-Application-Course-Android-and-IOS-Development-with-Xamarin\Bölüm 10-11-12\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\Views\Tabs.xaml.g.cs
+C:\Users\CihatSolak\Desktop\Yeni klasör\Mobile-Application-Course-Android-and-IOS-Development-with-Xamarin\Bölüm 10-11-12\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\XamarinShell.csproj.CoreCompileInputs.cache
+C:\Users\CihatSolak\Desktop\Yeni klasör\Mobile-Application-Course-Android-and-IOS-Development-with-Xamarin\Bölüm 10-11-12\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\XamarinShell.AssemblyInfoInputs.cache
+C:\Users\CihatSolak\Desktop\Yeni klasör\Mobile-Application-Course-Android-and-IOS-Development-with-Xamarin\Bölüm 10-11-12\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\XamarinShell.AssemblyInfo.cs
+C:\Users\CihatSolak\Desktop\Yeni klasör\Mobile-Application-Course-Android-and-IOS-Development-with-Xamarin\Bölüm 10-11-12\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\CihatSolak\Desktop\Yeni klasör\Mobile-Application-Course-Android-and-IOS-Development-with-Xamarin\Bölüm 10-11-12\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\XamarinShell.dll
+C:\Users\CihatSolak\Desktop\Yeni klasör\Mobile-Application-Course-Android-and-IOS-Development-with-Xamarin\Bölüm 10-11-12\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\ref\XamarinShell.dll
+C:\Users\CihatSolak\Desktop\Yeni klasör\Mobile-Application-Course-Android-and-IOS-Development-with-Xamarin\Bölüm 10-11-12\XamarinShell\XamarinShell\XamarinShell\obj\Debug\netstandard2.0\XamarinShell.pdb

@@ -1,0 +1,17 @@
+C:\Users\CihatSolak\source\repos\XamarinImages\XamarinImages\XamarinImages\bin\Debug\netstandard2.0\XamarinImages.deps.json
+C:\Users\CihatSolak\source\repos\XamarinImages\XamarinImages\XamarinImages\bin\Debug\netstandard2.0\XamarinImages.dll
+C:\Users\CihatSolak\source\repos\XamarinImages\XamarinImages\XamarinImages\bin\Debug\netstandard2.0\ref\XamarinImages.dll
+C:\Users\CihatSolak\source\repos\XamarinImages\XamarinImages\XamarinImages\bin\Debug\netstandard2.0\XamarinImages.pdb
+C:\Users\CihatSolak\source\repos\XamarinImages\XamarinImages\XamarinImages\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\CihatSolak\source\repos\XamarinImages\XamarinImages\XamarinImages\obj\Debug\netstandard2.0\XamarinImages.csproj.CoreCompileInputs.cache
+C:\Users\CihatSolak\source\repos\XamarinImages\XamarinImages\XamarinImages\obj\Debug\netstandard2.0\XamarinImages.AssemblyInfoInputs.cache
+C:\Users\CihatSolak\source\repos\XamarinImages\XamarinImages\XamarinImages\obj\Debug\netstandard2.0\XamarinImages.AssemblyInfo.cs
+C:\Users\CihatSolak\source\repos\XamarinImages\XamarinImages\XamarinImages\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\CihatSolak\source\repos\XamarinImages\XamarinImages\XamarinImages\obj\Debug\netstandard2.0\XamarinImages.dll
+C:\Users\CihatSolak\source\repos\XamarinImages\XamarinImages\XamarinImages\obj\Debug\netstandard2.0\ref\XamarinImages.dll
+C:\Users\CihatSolak\source\repos\XamarinImages\XamarinImages\XamarinImages\obj\Debug\netstandard2.0\XamarinImages.pdb
+C:\Users\CihatSolak\source\repos\XamarinImages\XamarinImages\XamarinImages\obj\Debug\netstandard2.0\DownloadingImages.xaml.g.cs
+C:\Users\CihatSolak\source\repos\XamarinImages\XamarinImages\XamarinImages\obj\Debug\netstandard2.0\EmbeddedImages.xaml.g.cs
+C:\Users\CihatSolak\source\repos\XamarinImages\XamarinImages\XamarinImages\obj\Debug\netstandard2.0\XamarinImages.csprojAssemblyReference.cache
+C:\Users\CihatSolak\source\repos\XamarinImages\XamarinImages\XamarinImages\obj\Debug\netstandard2.0\Fontawesome.xaml.g.cs
+C:\Users\CihatSolak\source\repos\XamarinImages\XamarinImages\XamarinImages\obj\Debug\netstandard2.0\LoadingScreen.xaml.g.cs

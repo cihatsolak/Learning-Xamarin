@@ -1,0 +1,17 @@
+﻿.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    text-align:center;
+    font-weight:300;
+    vertical-align:middle;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    text-align: center;
+    font-weight: 300;
+    vertical-align: middle;
+}

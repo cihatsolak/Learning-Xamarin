@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinControls.Controls.LabelControl">
+
+    <StackLayout  Padding="30">
+        <Label Text="Underline" TextDecorations="Underline"/>
+        <Label Text="Strikethrough" TextDecorations="Strikethrough"/>
+        <Label Text="Strikethrough and Underline" TextDecorations="Strikethrough, Underline"/>
+        
+        <Label LineBreakMode="TailTruncation"
+            Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"/>
+
+        <Label LineBreakMode="WordWrap"
+               MaxLines="3"
+            Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"/>
+
+        <Label LineBreakMode="HeadTruncation"
+               MaxLines="3"
+            Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"/>
+
+        <Label LineBreakMode="WordWrap">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Lorem İpsum " TextColor="Red"></Span>
+                    <Span TextDecorations="Underline" Text="is simply dummy "></Span>
+                    <Span BackgroundColor="Yellow" Text="text of the printing "></Span>
+                    <Span TextColor="Blue" TextDecorations="Underline" Text="Devamını Oku">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}" CommandParameter="http://cihatsolak.com"></TapGestureRecognizer>
+                        </Span.GestureRecognizers>
+                    </Span>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        
+    </StackLayout>
+</ContentPage>

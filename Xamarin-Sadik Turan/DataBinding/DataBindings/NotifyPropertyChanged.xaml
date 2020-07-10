@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:models="clr-namespace:DataBinding.Models"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DataBinding.DataBindings.NotifyPropertyChanged">
+
+    <!--
+        Xaml tarafında model tanıtma, Xmlns 'i yukarda yazmayı unutma
+        
+        xmlns:models="clr-namespace:DataBinding.Models"
+    -->
+    <ContentPage.BindingContext>
+        <models:NotifyViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Text="{Binding Name}" Placeholder="Enter Name"/>
+            <Entry Text="{Binding DisplayName}" Placeholder="Enter Name"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

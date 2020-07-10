@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinImages.EmbeddedImages"
+             xmlns:local="clr-namespace:XamarinImages.Extensions;assembly=XamarinImages">
+    
+    <ContentPage.Content>
+
+        <!--
+            Embedded Images: Ios ve Android projeleri için ortak geliştirme yaptıgımız 
+            proje tipi olan xamarin forms içeisine ekleyecek olduğumuz resmi,
+            hem android hem ios platformunda gösterelim.
+        
+            Normal şartlarda local resimler (embedded image) back-end tarafında tanımlanır.
+            Henüz xamarin için xaml'de local resimleri kullanabileceğimiz bir yapı bulunmamakta. 
+            Microsoft bunun için bir extension yazmış ve bize sunmuş.
+        -->
+
+        <StackLayout>
+            <Image x:Name="image" Source="{local:ImageResource ResourceId=XamarinImages.Images.background.jpg}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
